@@ -1,43 +1,24 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="home">
-    <h1>My homepage</h1>
-    <p>This is a test website</p>
-    <P>Children love stories. It’s true!
+	<style type="text/css">.relogio{
+		width:600px;
+		height:600px;
+		margin-top:40px;
+		margin-left:280px;
+		margin-right:50px;
+		margin-bottom:250px 
+		auto 0 auto;}
+	</style>
 
-	And every child enjoys it for different reasons – be it travelling to magical worlds, learning new concepts, going on adventures, etc.
+	<div class="relogio"></div>
 
-	With stories, the possibilities are truly limitless — your child can join Tintin as he travels the world, solves mysteries and nabs crooks; your child can study at Hogwarts and learn about life through the magical world of Harry Potter; your child can go back in time and become an active participant at Akbar’s court.
+	<div id="proverb">
+	<br></br>
+	<p>Everything happens to everybody sooner or later if there is time enough. </p> 
+	<p>- George Bernard Shaw</p></div>&nbsp;
 
-	The list goes on!
+	<script type="text/javascript" src="{{ url_for('static', filename='js/clock.js') }}"></script>
 
-	RELATED: Storytelling – 17 Incredible Ways To Tell Great Stories To Your Child
-
-	Perhaps the best way to help a child explore, express, understand emotions, problems, problem-solving, habits, and much more is via stories. Be it a quick bedtime tale or a grandma fable, each story helps a child enter a completely different magical and imaginative world that has no boundaries.</P>
-
-	    <P>Children love stories. It’s true!
-
-	And every child enjoys it for different reasons – be it travelling to magical worlds, learning new concepts, going on adventures, etc.
-
-	With stories, the possibilities are truly limitless — your child can join Tintin as he travels the world, solves mysteries and nabs crooks; your child can study at Hogwarts and learn about life through the magical world of Harry Potter; your child can go back in time and become an active participant at Akbar’s court.
-
-	The list goes on!
-
-	RELATED: Storytelling – 17 Incredible Ways To Tell Great Stories To Your Child
-
-	Perhaps the best way to help a child explore, express, understand emotions, problems, problem-solving, habits, and much more is via stories. Be it a quick bedtime tale or a grandma fable, each story helps a child enter a completely different magical and imaginative world that has no boundaries.</P>
-
-	    <P>Children love stories. It’s true!
-
-	And every child enjoys it for different reasons – be it travelling to magical worlds, learning new concepts, going on adventures, etc.
-
-	With stories, the possibilities are truly limitless — your child can join Tintin as he travels the world, solves mysteries and nabs crooks; your child can study at Hogwarts and learn about life through the magical world of Harry Potter; your child can go back in time and become an active participant at Akbar’s court.
-
-	The list goes on!
-
-	RELATED: Storytelling – 17 Incredible Ways To Tell Great Stories To Your Child
-
-	Perhaps the best way to help a child explore, express, understand emotions, problems, problem-solving, habits, and much more is via stories. Be it a quick bedtime tale or a grandma fable, each story helps a child enter a completely different magical and imaginative world that has no boundaries.</P>
-	
-</div>
 {% endblock %}
+

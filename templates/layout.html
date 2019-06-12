@@ -2,23 +2,33 @@
 <html>
   <head>
       <title>Chao Zhang's Website</title>
-      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
   </head>
+
+  <link rel="stylesheet" href="{{url_for('static',filename='css/designer_chao.css')}}">
+
   <body>
+
+  <div class="spinner"></div>
+
     <header>
       <div class="container">
-        <h1 class="logo">Chao Zhang</h1>
+        <h1 class="logo">Chao Zhang</a></h1>   
         <strong><nav>
           <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li id="li_home"><a href="{{ url_for('home') }}">Home</a></li>
+            <li id="li_about"><a href="{{ url_for('about') }}">About me</a></li>
+            <li id="li_image"><a href="{{ url_for('image') }}">Gallery</a></li>
+            <li id="li_music"><a href="{{ url_for('music') }}">Music</a></li>
+            <li id="li_game"><a href="{{ url_for('game') }}">Game</a></li>
           </ul>
         </nav></strong>
       </div>
     </header>
+
     <div class="container">
         {%block content%}
         {%endblock%}
     </div>
+
   </body>
 </html>
