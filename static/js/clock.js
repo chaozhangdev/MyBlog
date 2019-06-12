@@ -94,7 +94,7 @@
     };
     
     
-    ctx.strokeStyle = "#777";
+    ctx.strokeStyle = "#585f5f";
 		ctx.lineWidth = 6;    
     
     ctx.beginPath();
@@ -104,7 +104,7 @@
     ctx.closePath();
     
     
-    ctx.strokeStyle = "#8256aa";
+    ctx.strokeStyle = "#6F4E37" ;
     ctx.lineWidth = 4;
    
      
@@ -139,7 +139,7 @@
     
     ctx.strokeStyle = "black";
     ctx.shadowBlur=2;
-		ctx.shadowColor="black";
+		ctx.shadowColor="#242526";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.font = "16pt sans-serif";
