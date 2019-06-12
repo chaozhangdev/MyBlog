@@ -104,7 +104,7 @@
     ctx.closePath();
     
     
-    ctx.strokeStyle = "#643b2a";
+    ctx.strokeStyle = "#8256aa";
     ctx.lineWidth = 4;
    
      

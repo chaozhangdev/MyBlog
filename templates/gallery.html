@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="gallery">
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/gallery.css')}}">
+
+
+  <p class="heading">Life is good.</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="/static/img/rb.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Double Rainbow</p>
+          <p class="opacity-low">Saskatchewan Dr, Regina, SK</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="/static/img/calgary.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>City Night</p>
+          <p class="opacity-low">Downtown, Calgary, AB</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="/static/img/cloud.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Cloud</p>
+          <p class="opacity-low">Parliament Ave, Regina, SK</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="/static/img/hl.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Havilland Park</p>
+          <p class="opacity-low">Harbour Landing, Regina, SK</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="/static/img/liu.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Liu Yi Shou Hot Pot</p>
+          <p class="opacity-low">Chinatown, Edmonton, AB</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="/static/img/qq.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>QQ</p>
+          <p class="opacity-low">Chao is my best friend !</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+{% endblock %}
