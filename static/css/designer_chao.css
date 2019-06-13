@@ -95,13 +95,12 @@ div.about {
   display: inline;
 }
 
-/*#selectable li:hover {background: orange; color: white; }*/
 
-#li_home:hover {background-color: #91e9fc;}
+/*#li_home:hover {background-color: #91e9fc;}
 #li_about:hover {background-color: #fcc2c4;}
 #li_gallery:hover {background-color: #ccc2fd;}
 #li_music:hover {background-color: #dfe90c;}
-#li_game:hover {background-color: #edfec4;}
+#li_game:hover {background-color: #edfec4;}*/
 
 .menu li + li {
   margin-left: 25px;
