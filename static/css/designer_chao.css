@@ -1,6 +1,8 @@
+
 body {
   font-family: "Comic Sans MS", sans-serif;
-  background-image: url('/static/img/simple.png');
+  background-image: url('/static/img/33.png');
+  /*background-color: black;*/
   animation: fadein 2s;
   color: black;
   -moz-animation: fadein 2s; /* Firefox */
@@ -158,3 +160,4 @@ li {
     }
 }
 /*------------------------------*/
+
