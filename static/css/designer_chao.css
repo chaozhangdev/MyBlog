@@ -3,11 +3,11 @@ body {
   font-family: "Comic Sans MS", sans-serif;
   background-image: url('/static/img/33.png');
   /*background-color: black;*/
-  animation: fadein 2s;
+  animation: fadein 1s;
   color: black;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
 }
 
 
@@ -28,10 +28,6 @@ p {
 	font-size: 1.4em;
 	color: black;
 	text-align: left;
-  animation: fadein 4s;
-  -moz-animation: fadein 4s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari and Chrome */
-  -o-animation: fadein 4s; /* Opera */
 }
 
 header {
@@ -105,10 +101,6 @@ div.about {
 li {
 	font-size: 1.3em;
   margin-top: 20px;
-  animation: fadein 4s;
-  -moz-animation: fadein 4s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari and Chrome */
-  -o-animation: fadein 4s; /* Opera */
 }
 
 .musicP{
