@@ -4,19 +4,24 @@
   padding: 110;
 }
 
+#word {
+  color: black;
+  text-align: left;
+  font-size: 1.5em;
+}
+
 p{
   color:white;
 }
 
-.heading {
+/* .heading {
     text-align: center;
     font-size: 1.5em;
-    letter-spacing: 1px;
     padding: 20px;
     color: black;
     margin-top: 48px;
     margin-bottom: 0px;
-}
+} */
 
 .gallery-image {
   padding: 20px;

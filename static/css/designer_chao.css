@@ -10,11 +10,6 @@ body {
   -o-animation: fadein 1s; /* Opera */
 }
 
-
-#contact {
-  color: blue;
-}
-
 #proverb p {
   margin-top: 20px;
   font-size: 1.2em;
@@ -41,7 +36,7 @@ header {
 
 header h1.logo {
   height: 10px;
-  margin-top: 48px;
+  margin-top: 40px;
   margin-bottom: 0px;
   color: black;
   font-size: 2.0em;
@@ -104,20 +99,10 @@ li {
   justify-content: flex-center;
 }
 
-.musicP{
-  text-align: center;
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  color: black;s
-  margin-top: 48px;
-  margin-bottom: 0px;
-}
-
 .contentframe {
   position:relative;
   margin: 10px;
 }
-
 
 /*------------------animation*/
 @keyframes fadein {
