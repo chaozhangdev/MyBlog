@@ -44,7 +44,7 @@ header h1.logo {
   margin-top: 48px;
   margin-bottom: 0px;
   color: black;
-  font-size: 3.0em;
+  font-size: 2.0em;
   font-family: "Jokerman";
 }
 
@@ -106,9 +106,9 @@ li {
 
 .musicP{
   text-align: center;
-  font-size: 2.0em;
+  font-size: 1.5em;
   letter-spacing: 1px;
-  color: black;
+  color: black;s
   margin-top: 48px;
   margin-bottom: 0px;
 }
