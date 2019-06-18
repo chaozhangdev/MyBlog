@@ -8,20 +8,16 @@
   color: black;
   text-align: left;
   font-size: 1.5em;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  margin-top: 48px;
+  margin-bottom: 0px;
 }
 
 p{
   color:white;
 }
-
-/* .heading {
-    text-align: center;
-    font-size: 1.5em;
-    padding: 20px;
-    color: black;
-    margin-top: 48px;
-    margin-bottom: 0px;
-} */
 
 .gallery-image {
   padding: 20px;
