@@ -12,13 +12,17 @@ def home():
 def about():
 	return render_template("about.html")
 
+@app.route("/research/")
+def research():
+    return render_template("research.html")
+
+@app.route("/project/")
+def project():
+    return render_template("project.html")
+
 @app.route("/gallery/")
 def gallery():
-	return render_template("gallery.html")
-
-@app.route("/music/")
-def music():
-    return render_template("music.html")
+    return render_template("gallery.html")
 
 @app.route("/game/")
 def game():

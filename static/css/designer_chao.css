@@ -1,44 +1,36 @@
-
 body {
+  color: black;
+  padding: 20px;
   font-family: "Comic Sans MS", sans-serif;
-  /* background-image: url('/static/img/33.png'); */
-  animation: fadein 0.5s;
   color: black;
-  -moz-animation: fadein 0.5s; /* Firefox */
-  -webkit-animation: fadein 0.5s; /* Safari and Chrome */
-  -o-animation: fadein 0.5s; /* Opera */
-}
-
-#proverb p {
-  margin-top: 20px;
-  font-size: 1.2em;
-  color: black;
-  text-align: right;
-  font-family: "Bradley Hand ITC"
 }
 
 p {
 	font-size: 1.2em;
 	color: black;
 	text-align: left;
+  margin-bottom: 20px;
 }
 
 header {
-  height: 50px;
+  /* background-color: red; */
+  height: 35px;
   width: 100%;
   opacity: .9;
-  margin-bottom: 10px;
-  color: black;
-  text-align: left;
+  margin-bottom: 40px;
 }
 
 header h1.logo {
-  height: 10px;
-  margin-top: 40px;
-  margin-bottom: 0px;
-  color: black;
-  font-size: 1.5em;
-  font-family: "Comic Sans MS";
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+}
+
+header h1.logo:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 h1{
@@ -48,91 +40,36 @@ h1{
 h2 {
 	color: black;
 	font-size: 1.5em;
-  margin-top: 48px;
+  margin-top: 60px;
 }
 
+
 .container {
-  width: 1200px;
+  width: 1200px; 
   margin: 0 auto;
 }
 
-div.home {
-  padding: 10px 0 30px 0;
-/*  background-color: #ebe6c6;*/
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
-
-div.about {
-  padding: 10px 0 30px 0;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-
-.menu {
-  float: right;
-  margin-bottom: 55px;
-}
-
-#li_about,#li_home,#li_game,#li_gallery,#li_music{
-  font-size: 1.2em;
-  display: inline;
-}
-
-.menu li + li {
-  margin-left: 25px;
-}
-
-.menu li a {
-  color: black;
-  font-family: "Comic Sans MS";
-}
-
+  
 li {
 	font-size: 1.2em;
   margin-top: 5px;
   justify-content: flex-center;
 }
 
-.contentframe {
-  position:relative;
-  margin: 10px;
+.menu {
+  float: right;
+  margin-top: 8px;
 }
 
-/*------------------animation*/
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+.menu li {
+  display: inline;
 }
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-/*------------------------------*/
 
+.menu li + li {
+  margin-left: 35px;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+}
