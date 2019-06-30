@@ -24,10 +24,6 @@ def project():
 def gallery():
     return render_template("gallery.html")
 
-@app.route("/game/")
-def game():
-	return render_template("game.html")
-
 # ///////////////////////////////////////////////////////////////////////// overwrite
 @app.context_processor
 def override_url_for():

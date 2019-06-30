@@ -2,11 +2,57 @@
 {% block content %}
 <div class="about">
 
-	<style type="text/css">#contact{margin-top: -20px; text-align: left; color:black; background-color: white;}</style>
 	<style type="text/css">h2{background-color:#26282e;color: white;}</style>
+
+	<h2>{ Steganography }</h2>
+	<p>
+		<a href="https://github.com/zzzchaozzz/Steganography">https://github.com/zzzchaozzz/Steganography</a>	
+	</p>
 	
+	<h3>My New Algorithm</h3>
+	<p> 
+		In order to hide words into images, We can change the color of pixels in images only by modifying its saturation slightly, then we can have the 'same' image. 
+		For an image, with respect to its size, it basically contains thousands by thousands pixels and we can use each pixel as a 
+		space for storing each character in message. Then the solution becomes selecting pixels for characters and change the 
+		values of pixels by characters' values. For each character, it has a ASCII value and the range of ASCII is from 0 to 127. 
+		My algorithm is that adding the ASCII value of character in message into values of pixels in an image to realize steganography. 
+		Since the testing shows that if the value of the pixel is changed by a large number, then the saturation of that pixel is 
+		changed causing the color changed. So my algorithm is that by dividing the ASCII of each character in my message into 27 parts 
+		then the adding numbers are dramatically dropped. Divided 27 parts are consisted of 3 layers (r,g,b) times 8 neighbors of the 
+		pixel plus itself. Once the number is small, we can just add them into pixels and finish hiding characters from message into
+		the image.
+	</p>
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/5.png" alt="" >
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/6.png" alt="">
 
+	<h3>Results Analysis</h3>
+	<p>
+		By comparing the original image and the ciphered image in Figure 7, we can not distinguish any difference only
+		by human eyes and we may think that ciphered image is the original one. Even for machine, it is hard to detect 
+		if the image has been modified because we only change the values of some pixels randomly and sightly.
+		In addition, we only decrease the saturation of some pixels to a very small level without changing hue.
+		Figure 8 confirms programming works well which can exactly recover the plaintext from the ciphered image.
+	</p>
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/7.png" alt="">
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/8.png" alt="">
 
+	<h2>{ GIS - Navigation Toolbox Development }</h2>
+	<p>
+		<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment">
+			https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment</a>	
+	</p>
+
+	<h3>Methodology</h3>
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/5.png" alt="">
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/6.png" alt="">
+
+	<h3>Created Map and Test Results</h3>
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/11.png" alt="">
+	<img src="	https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/17.png" alt="">
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/19.png" alt="">
+	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/21.png" alt="">
+
+		<!-- Rought Sets -->
 	<h2>{ Rough Sets }</h2>
 
 	<h3>The Concept of Three-way Decision in Rough Set Theory</h3>
@@ -20,44 +66,6 @@
 		third non-commitment decision is made. It can be shown that, under certain
 		conditions, probabilistic three-way decisions are superior to both Palwak
 		three-way decisions and two-way decisions.
-	</P>
-
-	<h3>Rough Set Approximations in An Incomplete Information
-			Table Based On Possible World Semantics</h3>
-	<P>
-		By using the family CDEFI(OB) instead of the family CDEF(OB) in an
-		incomplete table, the meaning set of a formula becomes a conjunctively
-		definable interval set. The family CDEFI(OB) is consequently used to define
-		the structured positive and negative regions. We consider the componentwise
-		inclusion relationships between a conjunctively definable interval set
-		and X and Xc, that is, the set-theoretic inclusion between a set in the interval
-		set and X and Xc. This leads to two types of structured positive and negative
-		regions.
-		For a set of objects X in an incomplete table T~ , we define two types of
-		structured positive and negative regions of X as follows:
-		<br>(1) SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | m ~ (p)≠[∅,∅], ∀ S∈m ~ (p) ,S⊆X},
-		<br>	SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | m ~ (p)≠[∅,∅], ∀ S∈m ~ (p), S⊆Xc};
-		
-		<br>(2) SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | ∀ S∈m ~ (p), S≠∅, S⊆X},
-		<br> SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | ∀ S∈m ~ (p), S≠∅, S⊆Xc}.
-		
-		<br> For a set of objects X in an incomplete table T~ , its two types of structured
-		positive and negative regions can be equivalently expressed as:
-		<br>(1) SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | m ~ (p)≠[∅,∅], ∀ T∈COMP(T~ ), m(p|T)⊆X},
-		<br>SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | m ~ (p)≠[∅,∅], ∀ T∈COMP(T~ ), m(p|T)⊆Xc};
-		<br>(2) SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | ∀ T∈COMP(T~ ), m(p|T)≠∅, m(p|T)⊆X},
-		<br>SPOS*(X)={(p,m ~ (p))∈CDEFI(OB) | ∀ T∈COMP(T~ ), m(p|T)≠∅, m(p|T)⊆Xc}.
-			
-			
-			
-		<br>For a set of objects X in an incomplete table T~ , its two types of structured
-		positive and negative regions can be computed as:
-		
-		<br> (1) SPOS*(X)={(p,[m*(p),m*(p)])∈CDEFI(OB) | m*(p)≠∅, m*(p)⊆X},
-		<br> SPOS*(X)={(p,[m*(p),m*(p)])∈CDEFI(OB) | m*(p)≠∅, m*(p)⊆Xc};
-		<br> (2) SPOS*(X)={(p,[m*(p),m*(p)])∈CDEFI(OB) | (m*(p)≠∅ ∀ m*(p)⊆X) ∀ (m*(p)=∅ ^ m*(p) ^ X≠∅)},
-		<br> SPOS*(X)={(p,[m*(p),m*(p)])∈CDEFI(OB) | (m*(p)≠∅ ∀ m*(p)⊆X) ∀ (m*(p)=∅ ^ m*(p) ^ Xc≠∅)},
-		
 	</P>
 
 	<h3>Pawlak Three-step Data Analysis</h3>
@@ -169,7 +177,8 @@
 		correct part but not all correct is in boundary region.
 	</p>
 
-	<h2>Information Retrieval</h2>
+	<!-- Information Retrieval -->
+	<h2>{ Information Retrieval }</h2>
 
 	<p>
 		Information retrieval is obtaining information from resources according to need.
@@ -233,54 +242,6 @@
 		from examples and correct errors by itself to construct a bridge between results
 		and documents.
 	</p>
-
-	<h2>{ Steganography }</h2>
-	<p>
-		<a href="https://github.com/zzzchaozzz/Steganography">https://github.com/zzzchaozzz/Steganography</a>	
-	</p>
-	
-	<h3>My New Algorithm</h3>
-	<p> 
-		We can change the color of pixels in images only by modifying its saturation slightly, then we can have the 'same' image. 
-		For an image, with respect to its size, we basically have thousands by thousands pixels and we can use each pixel as a 
-		space for storing each character in message. Then the solution becomes selecting pixels for characters and change the 
-		values of pixels by characters' values. For each character, it has a ASCII value and the range of ASCII is from 0 to 127. 
-		my algorithm is that adding the ASCII value of character in message into values of pixels in an image to realize steganography. 
-		Since the testing above shows that if the value of the pixel is changed by a large number, then the saturation of that pixel is 
-		changed causing the color changed. So my algorithm is that by dividing the ASCII of each character in my message into 27 parts 
-		then the adding numbers are dramatically dropped. Divided 27 parts are consisted of 3 layers (r,g,b) times 8 neighbors of the 
-		pixel plus itself. Once the number is small, we can just add them into pixels and finish hiding characters from message into
-		the image.
-	</p>
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/5.png" alt="" >
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/6.png" alt="">
-
-	<h3>Results Analysis</h3>
-	<p>
-		By comparing the original image and the ciphered image in Figure 7, we can not distinguish any difference only
-		by human eyes and we may think that ciphered image is the original one. Even for machine, it is hard to detect 
-		if the image has been modified because we only change the values of some pixels randomly and sightly.
-		In addition, we only decrease the saturation of some pixels to a very small level without changing hue.
-		Figure 8 confirms programming works well which can exactly recover the plaintext from the ciphered image.
-	</p>
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/7.png" alt="">
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/8.png" alt="">
-
-	<h2>GIS - Navigation Toolbox Development</h2>
-	<p>
-		<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment">
-			https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment</a>	
-	</p>
-
-	<h3>Methodology</h3>
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/5.png" alt="">
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/6.png" alt="">
-
-	<h3>Created Map and Test Results</h3>
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/11.png" alt="">
-	<img src="	https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/17.png" alt="">
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/19.png" alt="">
-	<img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/21.png" alt="">
 
 </div>
 {% endblock %}

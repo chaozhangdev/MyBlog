@@ -17,7 +17,10 @@ function setup() {
   var iWidth = window.innerWidth <= 957 ? window.innerWidth - 20 : 937;
 
   var cnv = createCanvas(iWidth, iHeight);
-  
+  // var x = window.innerHeight ;
+  // var y = window.innerHeight ;
+  // cnv.position(x - iHeight, y - iHeight );
+
   player = new Player();
   computer = new Computer();
   ball = new Ball(width/2, height/2);

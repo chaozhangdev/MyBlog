@@ -4,15 +4,13 @@
 	<style type="text/css">.relogio{
 		width:600px;
 		height:600px;
-		margin-top:40px;
-		margin-left:280px;
-		margin-right:50px;
-		margin-bottom:250px 
-		auto 0 auto;}
+		position: absolute;
+		left: 33%;
+	}
 	</style>
+<div class="relogio"></div>
 
-	<div class="relogio"></div>
-	<script type="text/javascript" src="{{ url_for('static', filename='js/clock.js') }}"></script>
-
+<script type="text/javascript" src="{{ url_for('static', filename='js/clock.js') }}"></script>
 {% endblock %}
+
 
