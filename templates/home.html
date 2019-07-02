@@ -1,16 +1,125 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="home">
+
+<div id="clock">
 	<style type="text/css">.relogio{
-		width:600px;
-		height:600px;
+		width:400px;
+		height:400px;
 		position: absolute;
-		left: 33%;
+		opacity: 0.1;
 	}
 	</style>
-<div class="relogio"></div>
+	<div class="relogio"></div> 
+	<script type="text/javascript" src="{{ url_for('static', filename='js/clock.js') }}"></script>
+</div>
 
-<script type="text/javascript" src="{{ url_for('static', filename='js/clock.js') }}"></script>
+<div class="brick">
+	<h2>{ Recent Research & Projects }</h2>
+	<ul>
+		<li>Vue.js and React web development.</li>
+		<li>Machine Learning.</li>
+		<li>Deep Learning.</li>
+
+	</ul>
+</div>
+
+<div class="brick">
+	<h2>{ Summary of Academic Accomplements }</h2>
+
+	<h3>Computer Graphics</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/ComputerGraphics/tree/master/RayTracing">
+			<li>Wrote ray tracing & volume rendering source code.</li>
+		</a>
+		<a href="https://github.com/zzzchaozzz/ComputerGraphics/blob/master/README.md">
+			<li>Developed a volume rendering application to display images from medical CT data.</li>
+		</a>
+		
+		<li>Research in granular model rendering.</li>
+	</ul>
+
+	<h3>Computer Audio</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/ComputerAudio/blob/master/DistortionEffect_chaoZhang.pdf">
+			<li>Research in distortion effect implementation by digital filters.</li></a>
+		<a href="https://github.com/zzzchaozzz/ComputerAudio/blob/master/VoiceDisguiseResearchPaper_chaoZhang.pdf">
+			<li >Research in identification of voice disguise.</li></a>
+	</ul>
+
+	<h3>Geographic Inofrmation System</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment">
+			<li>Created a city of Vancouver model by ArcGIS Desktop.</li>
+		</a>
+		<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/blob/master/project%20report-chao%20zhang.pdf">
+			<li>Developed a navigation toolbox to provide the shortest route navigation based on Dijkstra's algorithm.</li>
+		</a>
+
+	</ul>
+
+	<h3>Full Stack Development</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/MyBlog">
+			<li>Designed webpages with HTML, CSS, JavaScript.</li>
+		</a>
+		<li>Framework construction by Flask.</li>
+		<li>Cloud depolyment.</li>
+		<li>Version control by Git.</li>
+	</ul>
+
+
+	<h3>Image Processing</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/ImageProcessing">
+			<li>Wrote source code for histogram equalization, pseudo color, contour detection and functional filters.</li>
+		</a>
+	
+		<li>Developed an image processing application including various functions.</li>
+		<li>Research in Fast Fourier Transform.</li>
+	</ul>
+
+	<h3>Cryptography and Data Security</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/Steganography">
+			<li>Developed a steganography algorithm.</li>
+		</a>
+		<li>Wrote RC4 source code.</li>
+		<li>Implemented network attacks including Ping of death, TearDrop, IP Spoofing and TCP SYN Flooding.</li>
+	</ul>
+
+	<h3>Network Communication</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/NetworkCommunication/blob/master/CollisionAvoidanceWithChiplessRFID.pdf">
+			<li>Research in solution for collision avoidance with chip-less RFID tags.</li>
+		</a>
+		<a href="https://github.com/zzzchaozzz/NetworkCommunication/blob/master/GroupResearch.pdf">
+			<li>Research in RFID communication and drone assisted vehicular networks.</li>
+		</a>
+	</ul>
+
+	<h3>Software Development</h3>
+	<ul>
+		<li>Developed a communication software to realize long distance video chat.</li>
+		<li>Developed a communication software to monitor remote desktop screens.</li>
+	</ul>
+
+	<h3>Embedded Software Development</h3>
+	<ul>
+		<li>Wrote core code for the embedded smart car to let it run according to required routes. </li>
+		<li>Developed real-time interactive video games based on ARM.</li>
+		<li>Developed multi-functional media applications based on ARM.</li>
+	</ul>
+
+	<h3>Electrical Design</h3>
+	<ul>
+		<li>Designed a band-pass filter circuit by Altium Designer.</li>
+		<li>Manually made the PCB by machine and welded the components by hand.</li>
+		<li>Test the circuit by the oscilloscope.</li>
+	</ul>
+
+</div>
+
 {% endblock %}
 
 

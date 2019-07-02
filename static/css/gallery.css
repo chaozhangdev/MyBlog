@@ -24,6 +24,16 @@ p{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  /* add border style */
+  border: 2px solid;
+  padding: 20px;
+  border-color:lightgrey;
+  box-shadow: 5px 10px #888888;
+  border-radius: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
 }
 
 .gallery-image img {
