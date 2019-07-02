@@ -6,29 +6,49 @@
 
   <link rel="stylesheet" href="{{url_for('static',filename='css/designer_chao.css')}}">
 
-  <body>
+  <!-- animation background -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" /> 
 
-  <header>
+  <body>
+  <header class="brickHEAD">
     <div class="container">
     
-       <h1 class="logo"><a style="text-decoration:none;color:black;">CHAO'S BLOG</a></h1>  
+      <h1 class="logo"><a style="text-decoration:none;color:whitesmoke;">CHAO'S BLOG</a></h1> 
+
+      <div id="MyClockDisplay" class="clock" onload="showTime()">
+        <script>
+          function showTime(){
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            var session = "AM";      
+            if(h == 0){
+                h = 12;
+            }      
+            if(h > 12){
+                h = h - 12;
+                session = "PM";
+            }   
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;      
+            var time = h + ":" + m + ":" + s + " " + session;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time; 
+            setTimeout(showTime, 1000);      
+            }
+          showTime();
+        </script>
+      </div>  
+
       <strong><nav>
         <ul class="menu">
-          <li id="li_home"><a style="text-decoration:none;" 
-            href="{{ url_for('home') }}">Home</a></li>
-            
-          <li id="li_about"><a style="text-decoration:none;" 
-            href="{{ url_for('about') }}">About</a></li>
-
-          <li id="li_research"><a style="text-decoration:none;" 
-            href="{{ url_for('research') }}">Research</a></li>
-
-          <li id="li_project"><a style="text-decoration:none;" 
-            href="{{ url_for('project') }}">Projects</a></li>
-
-          <li id="li_gallery"><a style="text-decoration:none;" 
-            href="{{ url_for('gallery') }}">Gallery</a></li>
-
+          <li id="li_home"><a href="{{ url_for('home') }}">Home</a></li>   
+          <li id="li_about"><a href="{{ url_for('about') }}">About</a></li>
+          <li id="li_research"><a href="{{ url_for('research') }}">Research</a></li>
+          <li id="li_project"><a href="{{ url_for('project') }}">Projects</a></li>
+          <li id="li_gallery"><a href="{{ url_for('gallery') }}">Gallery</a></li>
         </ul>
       </nav></strong>
     </div>

@@ -2,30 +2,28 @@
 {% block content %}
 <div class="home">
 
-<div id="clock">
-	<style type="text/css">.relogio{
-		width:400px;
-		height:400px;
-		position: absolute;
-		opacity: 0.1;
-	}
-	</style>
-	<div class="relogio"></div> 
-	<script type="text/javascript" src="{{ url_for('static', filename='js/clock.js') }}"></script>
-</div>
-
-<div class="brick">
+<!-- <div class="brick">
 	<h2>{ Recent Research & Projects }</h2>
 	<ul>
 		<li>Vue.js and React web development.</li>
 		<li>Machine Learning.</li>
 		<li>Deep Learning.</li>
-
 	</ul>
-</div>
+</div> -->
 
 <div class="brick">
 	<h2>{ Summary of Academic Accomplements }</h2>
+	
+	<h3>Full Stack Development</h3>
+	<ul>
+		<a href="https://github.com/zzzchaozzz/MyBlog">
+			<li>Designed webpages with HTML, CSS, JavaScript.</li>
+		</a>
+		<li>Framework construction by Flask.</li>
+		<li>Cloud depolyment.</li>
+		<li>Version control by Git.</li>
+	</ul>
+
 
 	<h3>Computer Graphics</h3>
 	<ul>
@@ -57,17 +55,6 @@
 		</a>
 
 	</ul>
-
-	<h3>Full Stack Development</h3>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/MyBlog">
-			<li>Designed webpages with HTML, CSS, JavaScript.</li>
-		</a>
-		<li>Framework construction by Flask.</li>
-		<li>Cloud depolyment.</li>
-		<li>Version control by Git.</li>
-	</ul>
-
 
 	<h3>Image Processing</h3>
 	<ul>
@@ -114,7 +101,7 @@
 	<h3>Electrical Design</h3>
 	<ul>
 		<li>Designed a band-pass filter circuit by Altium Designer.</li>
-		<li>Manually made the PCB by machine and welded the components by hand.</li>
+		<li>Manually made the PCB by machine and welded components by hand.</li>
 		<li>Test the circuit by the oscilloscope.</li>
 	</ul>
 
