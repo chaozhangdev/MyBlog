@@ -20,12 +20,12 @@ p{
   justify-content: center;
 
   /* add border style */
-  border: 2px solid;
-  padding: 20px;
-  border-color:lightgrey;
-  box-shadow: 5px 10px #888888;
+  border: 1.1px solid;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-color:rgb(222, 222, 222);
+  box-shadow:5px 5px 13px 3px rgb(222, 222, 222) inset;  
   border-radius: 25px;
-  margin-top: 60px;
   margin-bottom: 60px;
 
 }
