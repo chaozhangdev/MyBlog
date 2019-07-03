@@ -13,9 +13,14 @@ body {
        animation: fadein 2s;
 }
 
-h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 3%;
 }
 
 h1,h2,h3 {
@@ -39,7 +44,7 @@ header {
 
 header h1.logo {
   /* margin: auto; */
-  font-size: 1.4em;
+  font-size: 1.2em;
   float: left;
 }
 
@@ -49,9 +54,8 @@ header h1.logo {
 }
 
 li {
-	font-size: 1.2em;
-  margin-top: 5px;
-  margin-bottom: 5px; 
+	font-size: 1.1em;
+  margin-bottom: 10px; 
   justify-content: flex-center; 
 }
 
@@ -64,16 +68,18 @@ li {
 #li_home:hover, #li_about:hover, #li_gallery:hover, #li_research:hover, #li_project:hover{
   border-style: inset;
   transition: .5s;
-  opacity: .3;
+  opacity: .5;
 }
 
 .menu {
   float: right;
   margin-top: 8px;
+  font-size: 0.9em;
 }
 
 .menu li {
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0.945);
 }
 
 .menu li + li {
@@ -82,7 +88,7 @@ li {
 
 .menu li a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .brick {
@@ -94,7 +100,19 @@ li {
   border-color:rgb(222, 222, 222);
   box-shadow:5px 5px 13px 3px rgb(222, 222, 222) inset;  
   border-radius: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
+}
+
+.brick_about {
+  border: 1.1px solid;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color:rgb(222, 222, 222);
+  box-shadow:5px 5px 13px 3px rgb(222, 222, 222) inset;  
+  border-radius: 25px;
+  margin-bottom: 40px;
 }
 
 .brickHEAD {
@@ -136,7 +154,7 @@ li {
   position: absolute;
   margin-top: 20px;
   margin-left: 300px;
-  font-size: 24px;
+	font-size: 1.3em;
   font-family: Century;
   letter-spacing: 5px;
   color: whitesmoke;
