@@ -39,7 +39,8 @@ header {
   width: 1200px; 
   margin: 0 auto;
   opacity: .7;
-  background-color: black;
+  /* background-color: black; */
+  background-color: rgba(12, 2, 2, 0.89);
 }
 
 header h1.logo {
@@ -60,13 +61,13 @@ li {
 }
 
 #li_home, #li_about, #li_gallery, #li_research, #li_project{
-  border-style: outset;
-  border-radius: 25px;
-  padding: 5px;
+  /* border-style: outset;  */
+  /* border-radius: 25px; */
+  padding: 8px;
 }
 
 #li_home:hover, #li_about:hover, #li_gallery:hover, #li_research:hover, #li_project:hover{
-  border-style: inset;
+  /* border-style: inset; */
   transition: .5s;
   opacity: .5;
 }
@@ -79,7 +80,7 @@ li {
 
 .menu li {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.945);
+  /* background-color: rgba(255, 255, 255, 0.945);   */
 }
 
 .menu li + li {
@@ -88,7 +89,8 @@ li {
 
 .menu li a {
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
+  font-size: 110%
 }
 
 .brick {
@@ -109,6 +111,7 @@ li {
   padding-right:20px;
   padding-top: 10px;
   padding-bottom: 10px;
+
   border-color:rgb(222, 222, 222);
   box-shadow:5px 5px 13px 3px rgb(222, 222, 222) inset;  
   border-radius: 25px;
@@ -121,10 +124,16 @@ li {
   padding-right:20px;
   padding-top: 10px;
   padding-bottom: 10px;
+
   border-color: grey;
   box-shadow:10px 10px 5px grey;  
   border-radius: 25px;
   margin-bottom: 60px;
+
+  /* border-color:rgb(222, 222, 222);
+  box-shadow:10px 10px 30px 7px rgb(245, 242, 242) inset;  
+  border-radius: 25px;
+  margin-bottom: 40px; */
 }
 
 /* animation */
@@ -152,9 +161,9 @@ li {
 /* clock  */
 .clock {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 300px;
-	font-size: 1.3em;
+	font-size: 1.2em;
   font-family: Century;
   letter-spacing: 5px;
   color: whitesmoke;
