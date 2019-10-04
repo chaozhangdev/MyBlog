@@ -1,18 +1,14 @@
 body {
   padding: 20px;
   font-family: "Century", serif;
-
-  /* background-image: url('/static/img/yaowan.jpg'); */
-  /* background-image: url(""); */
-
-  /* animation fade in & out*/
-  -webkit-animation: fadein 2s; 
-  -moz-animation: fadein 2s; 
-   -ms-animation: fadein 2s; 
-    -o-animation: fadein 2s; 
-       animation: fadein 2s;
+  animation: fadein 1s;
 }
 
+.logo {
+  text-align: center;
+  text-decoration:none;
+  color:black;
+}
 
 h1 {
   font-size: 1.5em;
@@ -20,10 +16,10 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
-h1,h2,h3 {
+h1,h2 {
   font-family: "Lucida Bright", serif;
 }
 
@@ -35,52 +31,35 @@ p {
 }
 
 header {
-  height: 60px;
-  width: 1200px; 
-  margin: 0 auto;
-  opacity: .7;
-  /* background-color: black; */
-  background-color: rgba(12, 2, 2, 0.89);
+  display: flex;
+  justify-content: center;
 }
 
 header h1.logo {
-  /* margin: auto; */
   font-size: 1.2em;
   float: left;
 }
 
-.container {
-  width: 1200px; 
-  margin: 0 auto;
+.show{
+  margin: 40px 40px;
+  color:black;
 }
 
-li {
-	font-size: 1.1em;
-  margin-bottom: 10px; 
-  justify-content: flex-center; 
+.title{
+  text-align: center;
 }
 
-#li_home, #li_about, #li_gallery, #li_research, #li_project{
-  /* border-style: outset;  */
-  /* border-radius: 25px; */
-  padding: 8px;
-}
-
-#li_home:hover, #li_about:hover, #li_gallery:hover, #li_research:hover, #li_project:hover{
-  /* border-style: inset; */
-  transition: .5s;
-  opacity: .5;
+.show:hover {
+  animation: pulse 1s; 
 }
 
 .menu {
-  float: right;
-  margin-top: 8px;
-  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
 }
 
 .menu li {
   display: inline-block;
-  /* background-color: rgba(255, 255, 255, 0.945);   */
 }
 
 .menu li + li {
@@ -89,8 +68,16 @@ li {
 
 .menu li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   font-size: 110%
+}
+
+#li_home:hover, #li_about:hover, #li_research:hover{
+  animation: rubberBand 1s;
+}
+
+#li_home:hover{
+  color: red;
 }
 
 .brick {
@@ -102,38 +89,7 @@ li {
   border-color:rgb(222, 222, 222);
   box-shadow:5px 5px 13px 3px rgb(222, 222, 222) inset;  
   border-radius: 25px;
-  margin-bottom: 100px;
-}
-
-.brick_about {
-  border: 1.1px solid;
-  padding-left: 20px;
-  padding-right:20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  border-color:rgb(222, 222, 222);
-  box-shadow:5px 5px 13px 3px rgb(222, 222, 222) inset;  
-  border-radius: 25px;
-  margin-bottom: 40px;
-}
-
-.brickHEAD {
-  border: .1px solid;
-  padding-left: 20px;
-  padding-right:20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  border-color: grey;
-  box-shadow:10px 10px 5px grey;  
-  border-radius: 25px;
-  margin-bottom: 60px;
-
-  /* border-color:rgb(222, 222, 222);
-  box-shadow:10px 10px 30px 7px rgb(245, 242, 242) inset;  
-  border-radius: 25px;
-  margin-bottom: 40px; */
+  margin-bottom: 30px;
 }
 
 /* animation */
@@ -141,30 +97,4 @@ li {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@-ms-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@-o-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
 
-/* clock  */
-.clock {
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 300px;
-	font-size: 1.2em;
-  font-family: Century;
-  letter-spacing: 5px;
-  color: whitesmoke;
-}

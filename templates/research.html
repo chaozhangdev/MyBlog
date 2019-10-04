@@ -1,10 +1,65 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="research">
-	
+<hr>
+
+<!-- Steganography -->
+    <div class="brick">
+        <h1 class="title">{ Steganography } </h1>
+        <h2>[ My New Algorithm ]</h2>
+        <p> 
+            To hide words into images, we can change the color of pixels in images only by modifying its saturation slightly then obtain the 'same' image. 
+            For an image, with respect to its size, it basically contains thousands by thousands pixels and we can use each pixel as a 
+            space for storing each character in message. Then the solution becomes selecting pixels for characters and change the 
+            values of pixels by characters' values. For each character, it has a ASCII value and the range of ASCII is from 0 to 127. 
+            My algorithm is that adding the ASCII value of character in message into values of pixels in an image to realize steganography. 
+            Since the testing shows that if the value of the pixel is changed by a large number, then the saturation of that pixel is 
+            changed causing the color changed. So my algorithm is that by dividing the ASCII of each character in my message into 27 parts 
+            then the adding numbers are dramatically dropped. Divided 27 parts are consisted of 3 layers (r,g,b) times 8 neighbors of the 
+            pixel plus itself. Once the number is small, we can just add them into pixels and finish hiding characters from message into
+            the image.
+        </p>
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/5.png"  width="550" height="260" alt="" >
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/6.png" width="440" height="280" alt="">
+    
+        <h2>[ Results Analysis ]</h2>
+        <p>
+            By comparing the original image and the ciphered image in Figure 7, we can not distinguish any difference only
+            by human eyes and we may think that ciphered image is the original one. Even for machine, it is hard to detect 
+            if the image has been modified because we only change the values of some pixels randomly and sightly.
+            In addition, we only decrease the saturation of some pixels to a very small level without changing hue.
+            Figure 8 confirms programming works well which can exactly recover the plaintext from the ciphered image.
+        </p>
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/7.png" width="550" height="340" alt="">
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/Steganography/master/README/8.png" width="500" height="320" alt="">
+    
+        <p>
+            Project link: <a href="https://github.com/zzzchaozzz/Steganography">https://github.com/zzzchaozzz/Steganography</a>	
+        </p>
+        
+    </div>
+        
+    <!-- GIS - Navigation Toolbox Development -->
+    <div class="brick">
+        <h1 class="title">{ GIS - Navigation Toolbox Development }</h1>
+        <h2>[ Methodology ]</h2> 
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/5.png" alt="" class="images">
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/6.png" alt="" class="images">
+        <br>
+        <h2>[ Created Map and Test Results ]</h2>
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/11.png" alt="" >
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/17.png" alt="" >
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/19.png" alt="" >
+        <img src="https://raw.githubusercontent.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/master/img/21.png" alt="" >
+        <p>
+            Project link: <a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment" class="images">
+            https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment</a>		
+        </p>
+    </div>
+
 <!-- Rough Sets -->
 <div class="brick">
-        <h1>{ Rough Sets }</h1>
+        <h1 class="title">{ Rough Sets }</h1>
         <h2>The Concept of Three-way Decision in Rough Set Theory</h2>
         <P>
             The concept of three-way decisions was proposed and used to interpret
@@ -123,7 +178,8 @@
         
 <!-- Information Retrieval -->
 <div class="brick">
-    <h1>{ Information Retrieval }</h1>
+    <h1 class="title">{ Information Retrieval }</h1>
+    <br>
     <p>
         Information retrieval is obtaining information from resources according to need.
         The basic structure of information retrieval can be three main parts: documents,

@@ -2,106 +2,109 @@
 {% block content %}
 <div class="home">
 
-<!-- <div class="brick">
-	<h2>{ Recent Research & Projects }</h2>
-	<ul>
-		<li>Vue.js and React web development.</li>
-		<li>Machine Learning.</li>
-		<li>Deep Learning.</li>
-	</ul>
-</div> -->
+<hr>
+	<h1 style="text-align: center">{ Open Source Personal Projects }</h1>
 
-<div class="brick">
-	<h1>{ Open Source Personal Projects & Research }</h1>
-	
-	<h2>Computer Graphics</h2>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/ComputerGraphics/blob/master/README.md">
-			<li>Developed a volume rendering application to display images from medical CT data.</li>
-		</a>
-		<a href="https://github.com/zzzchaozzz/ComputerGraphics/tree/master/RayTracing">
-			<li>Wrote ray tracing & volume rendering source code.</li>
-		</a>
-		<li>Research in granular model rendering.</li>
-	</ul>
+<div class="">
+	<a href="https://github.com/zzzchaozzz/ComputerGraphics">
+		<figure class="figure brick show">
+			<h1 class="title">Computer Graphics</h1>
+			<img src="/static/img/cg.gif" width=400 height=300 class="figure-img img-fluid rounded" alt=”animated”>
+			<figcaption class="figure-caption">
+					<ul class="list">
+						<li>Developed an application to display images from CT data.</li>
+						<li>Wrote ray tracing & volume rendering source code.</li>
+						<li>Research in granular model rendering.</li>
+					</ul>
+			</figcaption>
+		</figure>
+	</a>	  
 
-	<h2>Computer Audio</h2>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/ComputerAudio/blob/master/DistortionEffect_chaoZhang.pdf">
-			<li>Research in distortion effect implementation by digital filters.</li></a>
-		<a href="https://github.com/zzzchaozzz/ComputerAudio/blob/master/VoiceDisguiseResearchPaper_chaoZhang.pdf">
-			<li >Research in identification of voice disguise.</li></a>
-	</ul>
+	<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment">
+		<figure class="figure brick show">
+			<h1 class="title">Geographic Inofrmation System</h1>
+			<img src="/static/img/gisnew.gif" width=340 height=120px class="figure-img img-fluid rounded" alt="">
+			<figcaption class="figure-caption">
+					<ul class="list">
+						<li>Created a city of Vancouver model by ArcGIS Desktop.</li>
+						<li>Developed a navigation toolbox to provide the shortest <br> route navigation based on Dijkstra's algorithm.</li>
+					</ul>
+			</figcaption>
+		</figure>
+	</a>
 
-	<h2>Geographic Inofrmation System</h2>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment">
-			<li>Created a city of Vancouver model by ArcGIS Desktop.</li>
-		</a>
-		<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment/blob/master/project%20report-chao%20zhang.pdf">
-			<li>Developed a navigation toolbox to provide the shortest route navigation based on Dijkstra's algorithm.</li>
-		</a>
+	<a href="http://chi-noodlebar.com/">
+		<figure class="figure brick show">
+			<h1 class="title">Website Development</h1>
+			<img src="/static/img/web.gif" width=400 height=300 class="figure-img img-fluid rounded" alt="">
+			<figcaption class="figure-caption">
+					<ul class="list">	
+						<li>Built website for the restaurant.</li>
+						<li>Cloud depolyment & maintenance.</li>
+						<li>HTML + CSS + JS + Bootstrap + jQuery</li>
+					</ul>
+			</figcaption>
+		</figure>
+	</a>
 
-	</ul>
 
-	<h2>Web Development</h2>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/MyBlog">
-			<li>Webpages design with HTML, CSS, JavaScript.</li>
-		</a>
-		<li>Framework construction by Flask.</li>
-		<li>Cloud depolyment.</li>
-		<li>Version control by Git.</li>
-	</ul>
 
-	<h2>Image Processing</h2>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/ImageProcessing">
-			<li>Wrote source code for histogram equalization, pseudo color, contour detection and functional filters.</li>
-		</a>
-	
-		<li>Developed an image processing application including various functions.</li>
-		<li>Research in Fast Fourier Transform.</li>
-	</ul>
+	<a href="https://github.com/zzzchaozzz/ImageProcessing">
+		<figure class="figure brick show">
+			<h1 class="title">Image Processsing</h1>
+			<img src="/static/img/imgp.png" width="360" height="280" class="figure-img img-fluid rounded" alt="">
+			<figcaption class="figure-caption">
+					<ul class="list">
+						<li>Wrote source code for histogram equalization, pseudo color, <br> contour detection and functional filters.</li>
+					</ul>
+			</figcaption>
+		</figure>
+	</a>
 
-	<h2>Cryptography and Data Security</h2>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/Steganography">
-			<li>Developed a steganography algorithm.</li>
-		</a>
-		<li>Wrote RC4 source code.</li>
-		<li>Implemented network attacks including Ping of death, TearDrop, IP Spoofing and TCP SYN Flooding.</li>
-	</ul>
+	<a href="https://github.com/zzzchaozzz/Steganography">
+		<figure class="figure brick show">
+			<h1 class="title">Cryptography and Data Security</h1>
+			<img src="/static/img/sss.png" width="400" height="300" class="figure-img img-fluid rounded" alt="">
+			<figcaption class="figure-caption">
+				<ul class="list">
+					<li>Developed a steganography algorithm.</li>
+					<li>Wrote RC4 source code.</li>
+				</ul>	
+			</figcaption>
+		</figure>
+	</a>
 
-	<h2>Network Communication</h2>
-	<ul>
-		<a href="https://github.com/zzzchaozzz/NetworkCommunication/blob/master/CollisionAvoidanceWithChiplessRFID.pdf">
-			<li>Research in solution for collision avoidance with chip-less RFID tags.</li>
-		</a>
-		<a href="https://github.com/zzzchaozzz/NetworkCommunication/blob/master/GroupResearch.pdf">
-			<li>Research in RFID communication and drone assisted vehicular networks.</li>
-		</a>
-	</ul>
 
-	<h2>Software Development</h2>
-	<ul>
-		<li>Developed a communication software to realize long distance video chat.</li>
-		<li>Developed a communication software to monitor remote desktop screens.</li>
-	</ul>
+	<hr>
+	<h1 style="text-align: center">{ Research Paper }</h1>
 
-	<h2>Embedded Software Development</h2>
-	<ul>
-		<li>Wrote core code for the embedded smart car to let it run according to required routes. </li>
-		<li>Developed real-time interactive video games based on ARM.</li>
-		<li>Developed multi-functional media applications based on ARM.</li>
-	</ul>
 
-	<h2>Electrical Design</h2>
-	<ul>
-		<li>Designed a band-pass filter circuit by Altium Designer.</li>
-		<li>Manually made the PCB by machine and welded components by hand.</li>
-		<li>Test the circuit by the oscilloscope.</li>
-	</ul>
+	<a href="https://github.com/zzzchaozzz/ComputerAudio/blob/master/VoiceDisguiseResearchPaper_chaoZhang.pdf">
+		<figure class="figure brick show">
+			<h1 class="title">Computer Audio</h1>
+			<img src="/static/img/ca.png" width="400" height="300" class="figure-img img-fluid rounded" alt="">
+			<figcaption class="figure-caption">
+					<ul class="list">
+						<li>Research in distortion effect implementation by digital filters.</li>
+						<li >Research in identification of voice disguise.</li>
+					</ul>
+			</figcaption>
+		</figure>
+	</a>
+
+	<a href="https://github.com/zzzchaozzz/NetworkCommunication">
+		<figure class="figure brick show">
+			<h1 class="title">Network Communication</h1>
+			<img src="/static/img/nnn.png" width="400" height="300" class="figure-img img-fluid rounded" alt="">
+			<figcaption class="figure-caption">
+				<ul class="list">
+					<li>Research in collision avoidance with chip-less RFID tags.</li>
+					<li>Research in RFID and drone assisted vehicular networks.</li>
+				</ul>
+			</figcaption>
+		</figure>
+	</a>
+</div>
 
 </div>
 
