@@ -1,0 +1,19 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzzchaozzz/MyBlog.git"
+  },
+  "author": "Chao Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzzchaozzz/MyBlog/issues"
+  },
+  "homepage": "https://github.com/zzzchaozzz/MyBlog#readme"
+}

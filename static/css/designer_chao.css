@@ -41,19 +41,18 @@ header h1.logo {
 }
 
 .show{
-  margin: 40px 40px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
   color:black;
-}
-
-.title{
-  text-align: center;
 }
 
 .show:hover {
   animation: pulse 1s; 
 }
 
-.menu {
+.menu{
   display: flex;
   justify-content: center;
 }
@@ -63,7 +62,7 @@ header h1.logo {
 }
 
 .menu li + li {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .menu li a {
@@ -76,18 +75,14 @@ header h1.logo {
   animation: rubberBand 1s;
 }
 
-#li_home:hover{
-  color: red;
-}
-
 .brick {
   border: 1.1px solid;
   padding-left: 20px;
   padding-right:20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-color:rgb(222, 222, 222);
-  box-shadow:5px 5px 13px 3px rgb(222, 222, 222) inset;  
+  border-color:rgba(222, 222, 222, 0.048);
+  box-shadow:5px 5px 13px 5px rgb(177, 177, 177) inset;  
   border-radius: 25px;
   margin-bottom: 30px;
 }
@@ -96,5 +91,24 @@ header h1.logo {
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+hr { 
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+
+.title {
+  text-align: center;
+}
+
+.aboutme {
+  margin: 2%;
+  
 }
 
