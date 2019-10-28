@@ -6,7 +6,7 @@ body {
 
 .logo {
   text-align: center;
-  text-decoration:none;
+  text-decoration: none;
   color:black;
 }
 
@@ -71,7 +71,7 @@ header h1.logo {
   font-size: 110%
 }
 
-#li_home:hover, #li_about:hover, #li_research:hover{
+#li_home:hover, #li_about:hover, #li_research:hover, #li_teaching:hover{
   animation: rubberBand 1s;
 }
 

@@ -16,13 +16,13 @@ def about():
 def research():
     return render_template("research.html")
 
-@app.route("/project/")
-def project():
-    return render_template("project.html")
+@app.route("/teaching/")
+def teaching():
+    return render_template("teaching.html")
 
-@app.route("/gallery/")
-def gallery():
-    return render_template("gallery.html")
+@app.route("/courseWeb/")
+def courseWeb():
+    return render_template("courseWeb.html")
 
 # ///////////////////////////////////////////////////////////////////////// overwrite
 @app.context_processor
