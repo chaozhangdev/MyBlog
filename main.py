@@ -16,6 +16,10 @@ def about():
 def research():
     return render_template("research.html")
 
+@app.route("/project/")
+def project():
+    return render_template("project.html")
+
 @app.route("/teaching/")
 def teaching():
     return render_template("teaching.html")
@@ -23,6 +27,18 @@ def teaching():
 @app.route("/courseWeb/")
 def courseWeb():
     return render_template("courseWeb.html")
+
+@app.route("/coursePython1/")
+def coursePython1():
+    return render_template("coursePython1.html")
+
+@app.route("/coursePython2/")
+def coursePython2():
+    return render_template("coursePython2.html")
+
+@app.route("/courseCS/")
+def courseCS():
+    return render_template("courseCS.html")
 
 # ///////////////////////////////////////////////////////////////////////// overwrite
 @app.context_processor

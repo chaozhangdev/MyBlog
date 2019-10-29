@@ -1,119 +1,19 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="home">
+	<hr>
 
-	<hr> <h1 class="text-center">{ Personal Projects }</h1>  
-
+	<style type="text/css">
+		.relogio{width:450px;height:450px;margin:10px auto 0 auto;}
+	</style>
 	<div class="text-center">
-		<a href="http://robofriend.s3-website-us-west-2.amazonaws.com">
-			<figure class="figure brick show">
-				<h1 class="title">Web App - RobotFriend</h1>
-				<img src="https://media.giphy.com/media/ZB80SlGjV4w2OWm8fA/giphy.gif" width=400 height=220 class="rounded mx-auto d-block" alt=”animated”>
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-							<br>
-							<li>React Web Applicaiton.</li>
-							<li>Search robot friends through cards.</li>		
-						</ul>
-				</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://github.com/zzzchaozzz/ComputerGraphics">
-			<figure class="figure brick show">
-				<h1 class="title">Computer Graphics</h1>
-				<img src="/static/img/cg.gif" width=400 height=220 class="rounded mx-auto d-block " alt=”animated”>
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-							<li>Developed an application to display images from CT data.</li>
-							<li>Wrote ray tracing & volume rendering source code.</li>
-							<li>Research in granular model rendering.</li>
-						</ul>
-				</figcaption>
-			</figure>
-		</a>	  
-
-		<a href="https://github.com/zzzchaozzz/GIS-NavigationToolboxDevelopment">
-			<figure class="figure brick show">
-				<h1 class="title">Geographic Inofrmation System</h1>
-				<img src="/static/img/gisnew.gif" width=400 height=220 class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-							<li>Created a city of Vancouver model by ArcGIS Desktop.</li>
-							<li>Developed a navigation toolbox to provide the shortest <br> route navigation based on Dijkstra's algorithm.</li>
-						</ul>
-				</figcaption>
-			</figure>
-		</a>
-
-		<a href="http://chi-noodlebar.com/">
-			<figure class="figure brick show">
-				<h1 class="title">Website Development</h1>
-				<img src="/static/img/web.gif" width=400 height=220 class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">	
-							<br>
-							<li>Built the marketing website for the restaurant.</li>
-							<li>Cloud depolyment & maintenance.</li>
-						</ul>
-				</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://github.com/zzzchaozzz/ImageProcessing">
-			<figure class="figure brick show">
-				<h1 class="title">Image Processsing</h1>
-				<img src="/static/img/imgp.png" width="400" height="220" class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-							<li>Wrote source code for histogram equalization, pseudo color, <br> contour detection and functional filters.</li>
-						</ul>
-				</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://github.com/zzzchaozzz/Steganography">
-			<figure class="figure brick show">
-				<h1 class="title">Cryptography and Data Security</h1>
-				<img src="/static/img/sss.png" width="400" height="220" class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-					<ul class="list text-left">
-						<li>Developed a steganography algorithm.</li>
-						<li>Wrote RC4 source code.</li>
-					</ul>	
-				</figcaption>
-			</figure>
-		</a>
-
-
-		<hr>
-		<h1 style="text-align: center">{ Research Paper }</h1>
-
-		<a href="https://github.com/zzzchaozzz/ComputerAudio/blob/master/VoiceDisguiseResearchPaper_chaoZhang.pdf">
-			<figure class="figure brick show">
-				<h1 class="title">Computer Audio</h1>
-				<img src="/static/img/ca.png" width="400" height="220" class="rounded mx-auto d-block" alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-							<li>Research in distortion effect implementation by digital filters.</li>
-							<li >Research in identification of voice disguise.</li>
-						</ul>
-				</figcaption>
-			</figure>
-		</a>
-
-		<a href="https://github.com/zzzchaozzz/NetworkCommunication">
-			<figure class="figure brick show">
-				<h1 class="title">Network Communication</h1>
-				<img src="/static/img/nnn.png" width="400" height="220" class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-					<ul class="list text-left">
-						<li>Research in collision avoidance with chip-less RFID tags.</li>
-						<li>Research in RFID and drone assisted vehicular networks.</li>
-					</ul>
-				</figcaption>
-			</figure>
-		</a>
+		<div class="relogio"></div>
+		<div>
+			<center>
+				<span id="todaydatetime"></span>
+			</center>
+		</div>
+		<script type="text/javascript" src="/static/js/clock.js"></script>
 	</div>
 
 	<footer>

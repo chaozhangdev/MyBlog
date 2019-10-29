@@ -2,10 +2,8 @@
   
   function Relogio(container){
     
-		this.container = container;    
-    this.initialize();
-    
-    
+	this.container = container;    
+    this.initialize(); 
   }
   
   Relogio.prototype.initialize = function(){
@@ -16,9 +14,9 @@
           ms: 0
         };
         this.canvas = createCanvas(this.container);
-    		this.ctx = this.canvas.getContext("2d");
-    		this.size = this.canvas.width;
-    		this.beginLoop();
+    	this.ctx = this.canvas.getContext("2d");
+    	this.size = this.canvas.width;
+    	this.beginLoop();
   };
   
   function deg2rad(deg){
@@ -38,17 +36,15 @@
     return rotatedPoint;
   }
   
-  function draw(){
-    
+  function draw(){    
     drawClock.call(this);
-    drawPointers.call(this);
-    
+    drawPointers.call(this);    
   };
   
   function drawPointers(){
     
     var ctx = this.ctx;
-      var size = this.size;
+    var size = this.size;
     var sizeBlock = size * .05;
   
     var center = {
@@ -62,17 +58,15 @@
       	y: sizeBlock  + sizeBlock / 4
       },
       minutes: {
-         x: size / 2 ,
+        x: size / 2 ,
       	y: sizeBlock  + sizeBlock 
       },
       hours: {
-         x: size / 2 ,
+        x: size / 2 ,
       	y: sizeBlock  + sizeBlock * 3.5
       } 
     }
-     
-  
-    
+        
     var angles = {
       seconds: (this.clockdata.s / 60) * 360,
       minutes: (this.clockdata.m / 60) * 360,
@@ -81,7 +75,7 @@
     
     positions.seconds = rotate(positions.seconds, angles.seconds, center);
     positions.minutes = rotate(positions.minutes, angles.minutes, center);
-		positions.hours = rotate(positions.hours, angles.hours, center);
+	positions.hours = rotate(positions.hours, angles.hours, center);
 	 	
     var conterMinutes = {
       x: ( 2 * center.x + ( center.x + (center.x - positions.minutes.x) ) ) / 3,
@@ -94,21 +88,18 @@
     };
     
     
-    ctx.strokeStyle = "#585f5f";
-		ctx.lineWidth = 6;    
+    ctx.strokeStyle = "#777";
+	ctx.lineWidth = 6;    
     
     ctx.beginPath();
     ctx.moveTo(positions.minutes.x, positions.minutes.y);
     ctx.quadraticCurveTo(conterMinutes.x, conterMinutes.y, positions.hours.x, positions.hours.y);    
     ctx.stroke();
     ctx.closePath();
-    
-    
-    ctx.strokeStyle = "#6F4E37" ;
+       
+    ctx.strokeStyle = "#A35EED";
     ctx.lineWidth = 4;
-   
-     
-    
+
     ctx.beginPath();
     ctx.arc(positions.seconds.x, positions.seconds.y, 20, 0, Math.PI * 2);
     ctx.stroke();
@@ -139,10 +130,10 @@
     
     ctx.strokeStyle = "black";
     ctx.shadowBlur=2;
-		ctx.shadowColor="#242526";
+	ctx.shadowColor="black";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
-    ctx.font = "16pt sans-serif";
+    ctx.font = "14pt sans-serif";
     
     var position = {
       x: size / 2 ,
@@ -150,7 +141,7 @@
     };
     
     for(var i = 0; i < 60; i++){
-     	var angle = i * 6;
+      var angle = i * 6;
       
       ctx.save();
       ctx.translate(center, center);
@@ -171,13 +162,11 @@
         ctx.beginPath();
         ctx.fillText( hora , position.x, position.y + sizeBlock / 5);
         ctx.fill();
-        ctx.closePath();
-        
+        ctx.closePath();        
         ctx.restore();
       }
-      
-    
-    	ctx.beginPath();
+
+	  ctx.beginPath();
       if( i % 5 ){        
         
       	ctx.moveTo(position.x, position.y  );
@@ -186,27 +175,22 @@
 				ctx.stroke();
 
       }else{
-			
-        
 			} 
-      ctx.closePath();
-      
+      ctx.closePath();     
       ctx.restore();
   	}
   }
   
   function update(){
     
-    var time = new Date();
-     
+    var time = new Date();     
     this.clockdata.h = time.getHours();
-		this.clockdata.m = time.getMinutes();
-		this.clockdata.s = time.getSeconds();
-		this.clockdata.ms = time.getMilliseconds();    
-    this.clockdata.h +=  (this.clockdata.m / 60);
-		this.clockdata.m += (this.clockdata.s / 60);
-    this.clockdata.s += (this.clockdata.ms / 1000);
-    
+	this.clockdata.m = time.getMinutes();
+	this.clockdata.s = time.getSeconds();
+	this.clockdata.ms = time.getMilliseconds();    
+    this.clockdata.h += (this.clockdata.m / 60);
+	this.clockdata.m += (this.clockdata.s / 60);
+    this.clockdata.s += (this.clockdata.ms / 1000);   
   };
   
   function loop(){
@@ -214,8 +198,7 @@
     update.call(this);
     draw.call(this);
     
-    requestAnimationFrame(loop.bind(this));
-    
+    requestAnimationFrame(loop.bind(this));    
   };
   
   Relogio.prototype.beginLoop = function(){
@@ -224,8 +207,7 @@
     
   };
   
-  function createCanvas(cont){
-		
+  function createCanvas(cont){		
     var size = Math.min(cont.offsetWidth, cont.offsetHeight);
     var canvas = document.createElement("canvas");
     canvas.width = size;

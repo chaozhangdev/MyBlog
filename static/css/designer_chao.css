@@ -68,10 +68,10 @@ header h1.logo {
 .menu li a {
   text-decoration: none;
   color: black;
-  font-size: 110%
+  font-size: 110%;
 }
 
-#li_home:hover, #li_about:hover, #li_research:hover, #li_teaching:hover{
+#li_home:hover, #li_about:hover, #li_research:hover, #li_teaching:hover, #li_project:hover{
   animation: rubberBand 1s;
 }
 
@@ -109,6 +109,13 @@ hr {
 
 .aboutme {
   margin: 2%;
-  
+}
+
+.section0 {
+  font-size: 140%;
+}
+
+.section1 {
+  font-size: 130%;
 }
 
