@@ -97,7 +97,7 @@
     ctx.stroke();
     ctx.closePath();
        
-    ctx.strokeStyle = "#2a0080";
+    ctx.strokeStyle = "black";
     ctx.lineWidth = 4;
 
     ctx.beginPath();
