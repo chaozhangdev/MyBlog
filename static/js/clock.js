@@ -89,7 +89,7 @@
     
     
     ctx.strokeStyle = "#777";
-	ctx.lineWidth = 6;    
+	  ctx.lineWidth = 6;    
     
     ctx.beginPath();
     ctx.moveTo(positions.minutes.x, positions.minutes.y);
@@ -97,7 +97,7 @@
     ctx.stroke();
     ctx.closePath();
        
-    ctx.strokeStyle = "#A35EED";
+    ctx.strokeStyle = "#2a0080";
     ctx.lineWidth = 4;
 
     ctx.beginPath();
@@ -129,8 +129,8 @@
     ctx.clearRect(0, 0, size, size);
     
     ctx.strokeStyle = "black";
-    ctx.shadowBlur=2;
-	ctx.shadowColor="black";
+    ctx.shadowBlur=1;
+	  ctx.shadowColor="black";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.font = "14pt sans-serif";
@@ -185,11 +185,11 @@
     
     var time = new Date();     
     this.clockdata.h = time.getHours();
-	this.clockdata.m = time.getMinutes();
-	this.clockdata.s = time.getSeconds();
-	this.clockdata.ms = time.getMilliseconds();    
+	  this.clockdata.m = time.getMinutes();
+	  this.clockdata.s = time.getSeconds();
+	  this.clockdata.ms = time.getMilliseconds();    
     this.clockdata.h += (this.clockdata.m / 60);
-	this.clockdata.m += (this.clockdata.s / 60);
+	  this.clockdata.m += (this.clockdata.s / 60);
     this.clockdata.s += (this.clockdata.ms / 1000);   
   };
   
