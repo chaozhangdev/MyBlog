@@ -40,6 +40,10 @@ def coursePython2():
 def courseCS():
     return render_template("courseCS.html")
 
+@app.route("/presentation/")
+def presentation():
+    return render_template("presentation.html")
+
 # ///////////////////////////////////////////////////////////////////////// overwrite
 @app.context_processor
 def override_url_for():

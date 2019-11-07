@@ -4,7 +4,7 @@
 
 	<script>document.querySelector(".logo").innerHTML="< Teaching >"</script>
 
-	<div class="brick text-center aboutme" > 
+	<div class="brick text-center" > 
 		<h1>{ Teaching Methodology: < Student Oriented > }</h1>
 		<p class="text-center">	
 		{Stage 1} Students --> <strong style="color: red;">Interest</strong>  --> Basic Knowledge --> Advanced Skills [virtuous circle: movivation] <br>
@@ -13,8 +13,9 @@
 	</div>
 	<hr>
 
-	<h1 class="text-center">{ Programming }</h1>  
 	<div class="text-center">
+		<h1 class="text-center">{ Programming }</h1>  
+	
 		<a href="https://code.org/">
 			<figure class="figure brick show">
 				<h1 class="title">Basic Scratch Programming</h1>
@@ -44,6 +45,7 @@
 				</figcaption>
 			</figure>
 		</a>
+
 		<a href="{{ url_for('coursePython1') }}">
 			<figure class="figure brick show">
 				<h1 class="title">Introduction to Programming</h1>
@@ -102,9 +104,8 @@
                             </ul>
 				</figcaption>
 			</figure>
-        </a>
-        
-<!------------------------------------------------------------------------------------------------------>
+		</a>
+		
 		<hr>
 		<h1 style="text-align: center">{ Math & Science }</h1>
 
@@ -137,7 +138,22 @@
 				</figcaption>
 			</figure>
         </a>
-        
+		
+		<hr>
+		<h1 style="text-align: center">{ Presentation }</h1>
+
+		<a href="{{ url_for('presentation') }}">
+			<figure class="figure brick show">
+				<h1 class="title">Programming Education</h1>
+				<img src="https://s5.pipacode.cn/2018/08-13/854babcb5cbfbb619920b91cca9fe009.png" width="400" height="220" class="rounded mx-auto d-block" alt="">
+				<figcaption class="figure-caption">
+						<ul class="list text-left">
+						</ul>
+				</figcaption>
+			</figure>
+		</a>
+
+
     </div>
 
 </div>

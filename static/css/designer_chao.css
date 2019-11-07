@@ -11,15 +11,20 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-top: 2%;
 }
 
-h1,h2 {
+h3 {
+  margin-top: 1%;
+  font-size: 1.3em;
+}
+
+h1,h2,h3 {
   font-family: "Lucida Bright", serif;
 }
 
@@ -119,3 +124,4 @@ hr {
   font-size: 130%;
 }
 
+/* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/others/oth-6/oth638.cur), auto !important;} /* End http://www.cursors-4u.com */
