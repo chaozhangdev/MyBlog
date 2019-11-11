@@ -14,146 +14,169 @@
 	<hr>
 
 	<div class="text-center">
-		<h1 class="text-center">{ Programming }</h1>  
-	
-		<a href="https://code.org/">
-			<figure class="figure brick show">
-				<h1 class="title">Basic Scratch Programming</h1>
-				<img src="/static/img/courses/scratch1.jpg" width=400 height=220 class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-                            <br>
-                            <li>Learn basic scratch programming.</li>
-                            <li>Duration: 10 courses.</li>
-                            <li>Requirement: None.</li>	
-                        </ul>
-				</figcaption>
-			</figure>
-		</a>
 
-        <a href="https://scratch.mit.edu/">
-			<figure class="figure brick show">
-				<h1 class="title">Advanced Scratch Programming</h1>
-				<img src="/static/img/courses/scratch2.jpg" width=400 height=220 class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-                            <br>
-                            <li>Build 5 pure game projects.</li>
-                            <li>Duration: 10 courses.</li>
-                            <li>Requirement: Basic knowledage of scratch.</li>	
-                        </ul>
-				</figcaption>
-			</figure>
-		</a>
+		<!-- presentation  -->
+		<div>
+			<h1 style="text-align: center">{ Presentation }</h1>
 
-		<a href="{{ url_for('coursePython1') }}">
-			<figure class="figure brick show">
-				<h1 class="title">Introduction to Programming</h1>
-				<img src="/static/img/courses/python1.png" width=400 height=220 class="rounded mx-auto d-block " alt=”animated”>
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-                                <br>
-                                <li>Learn fundamental programming skills.</li>
-                                <li>Duration: 10 courses.</li>
-                                <li>Requirement: None.</li>	
-                            </ul>
-				</figcaption>
-			</figure>
-		</a>	  
+			<a href="{{ url_for('openCourse') }}">
+				<figure class="figure brick show">
+					<h1 class="title">Open Course - Programming (EN)</h1>
+					<img src="https://cdn-media-1.freecodecamp.org/images/0*ngXgBNNdx6iiWP8q.png" width="400" height="220" class="rounded mx-auto d-block" alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+							</ul>
+					</figcaption>
+				</figure>
+			</a>
 
-		<a href="{{ url_for('coursePython2') }}">
-			<figure class="figure brick show">
-				<h1 class="title">Advanced Programming Skills</h1>
-				<img src="/static/img/courses/python2.png" width=400 height=220 class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-                                <br>
-                                <li>Learn advanced programming skills.</li>
-                                <li>Duration: 10 courses.</li>
-                                <li>Requirement: Basic programming skills.</li>	
-                            </ul>
-				</figcaption>
-			</figure>
-		</a>
- 
-		<a href="{{ url_for('courseWeb') }}">
-            <figure class="figure brick show">
-                <h1 class="title">Introduction to Web Development</h1>
-                <img src="/static/img/courses/web.jpg" width=400 height=220 class="rounded mx-auto d-block" alt=”animated”>
-                <figcaption class="figure-caption">
-                        <ul class="list text-left">
-                            <br>
-                            <li>Learn how to build a website.</li>
-                            <li>Duration: 10 courses.</li>
-                            <li>Requirement: None.</li>	
-                        </ul>
-                </figcaption>
-            </figure>
-        </a>        
+			<a href="{{ url_for('presentation') }}">
+				<figure class="figure brick show">
+					<h1 class="title">Programming Education Startup (CN)</h1>
+					<img src="https://cdn.britannica.com/30/199930-131-B3D1D347/computer.jpg" width="400" height="220" class="rounded mx-auto d-block" alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+							</ul>
+					</figcaption>
+				</figure>
+			</a>	
+		<hr>	
+		</div>	
+			
 
-		<a href="{{ url_for('courseCS') }}">
-			<figure class="figure brick show">
-				<h1 class="title">Topics in Computer Science</h1>
-				<img src="/static/img/courses/cs.jpg" width="400" height="220" class="rounded mx-auto d-block " alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-                                <br>
-                                <li>Learn specific topcis in computer science.</li>
-                                <li>Duration: 10 courses.</li>
-                                <li>Requirement: Mid-level knowledage of programming.</li>	
-                            </ul>
-				</figcaption>
-			</figure>
-		</a>
+		<!-- programming  -->
+		<div>
+			<h1 class="text-center">{ Programming }</h1>  
+
+			<a href="https://code.org/">
+				<figure class="figure brick show">
+					<h1 class="title">Basic Scratch Programming</h1>
+					<img src="/static/img/courses/scratch1.jpg" width=400 height=220 class="rounded mx-auto d-block " alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+								<br>
+								<li>Learn basic scratch programming.</li>
+								<li>Duration: 10 courses.</li>
+								<li>Requirement: None.</li>	
+							</ul>
+					</figcaption>
+				</figure>
+			</a>
+
+			<a href="https://scratch.mit.edu/">
+				<figure class="figure brick show">
+					<h1 class="title">Advanced Scratch Programming</h1>
+					<img src="/static/img/courses/scratch2.jpg" width=400 height=220 class="rounded mx-auto d-block " alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+								<br>
+								<li>Build 5 pure game projects.</li>
+								<li>Duration: 10 courses.</li>
+								<li>Requirement: Basic knowledage of scratch.</li>	
+							</ul>
+					</figcaption>
+				</figure>
+			</a>
+
+			<a href="{{ url_for('coursePython1') }}">
+				<figure class="figure brick show">
+					<h1 class="title">Introduction to Programming</h1>
+					<img src="/static/img/courses/python1.png" width=400 height=220 class="rounded mx-auto d-block " alt=”animated”>
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+									<br>
+									<li>Learn fundamental programming skills.</li>
+									<li>Duration: 10 courses.</li>
+									<li>Requirement: None.</li>	
+								</ul>
+					</figcaption>
+				</figure>
+			</a>	  
+
+			<a href="{{ url_for('coursePython2') }}">
+				<figure class="figure brick show">
+					<h1 class="title">Advanced Programming Skills</h1>
+					<img src="/static/img/courses/python2.png" width=400 height=220 class="rounded mx-auto d-block " alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+									<br>
+									<li>Learn advanced programming skills.</li>
+									<li>Duration: 10 courses.</li>
+									<li>Requirement: Basic programming skills.</li>	
+								</ul>
+					</figcaption>
+				</figure>
+			</a>
 		
-		<hr>
-		<h1 style="text-align: center">{ Math & Science }</h1>
+			<a href="{{ url_for('courseWeb') }}">
+				<figure class="figure brick show">
+					<h1 class="title">Introduction to Web Development</h1>
+					<img src="/static/img/courses/web.jpg" width=400 height=220 class="rounded mx-auto d-block" alt=”animated”>
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+								<br>
+								<li>Learn how to build a website.</li>
+								<li>Duration: 10 courses.</li>
+								<li>Requirement: None.</li>	
+							</ul>
+					</figcaption>
+				</figure>
+			</a>        
 
-		<a href="">
-			<figure class="figure brick show">
-				<h1 class="title">Canadian Computing Competition</h1>
-				<img src="/static/img/courses/ccc.jpeg" width="400" height="220" class="rounded mx-auto d-block" alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-                            <br>
-                            <li>Prepare for canadian computing competition</li>
-                            <li>Duration: 10 courses.</li>
-                            <li>Requirement: Interset in programming.</li>	
-                        </ul>
-				</figcaption>
-			</figure>
-        </a>
-        
-        <a href="">
-			<figure class="figure brick show">
-				<h1 class="title">Science Experiments</h1>
-				<img src="/static/img/courses/experiments.png" width="400" height="220" class="rounded mx-auto d-block" alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-                            <br>
-                            <li>Let's do experiments together!</li>
-                            <li>Duration: 10 courses.</li>
-                            <li>Requirement: Interset in experiments.</li>	
-                        </ul>
-				</figcaption>
-			</figure>
-        </a>
+			<a href="{{ url_for('courseCS') }}">
+				<figure class="figure brick show">
+					<h1 class="title">Topics in Computer Science</h1>
+					<img src="/static/img/courses/cs.jpg" width="400" height="220" class="rounded mx-auto d-block " alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+									<br>
+									<li>Learn specific topcis in computer science.</li>
+									<li>Duration: 10 courses.</li>
+									<li>Requirement: Mid-level knowledage of programming.</li>	
+								</ul>
+					</figcaption>
+				</figure>
+			</a>	
+		</div>	
+			
+		<!-- Math -->
+		<div>
+			<hr>
+			<h1 style="text-align: center">{ Math & Science }</h1>
+
+			<a href="">
+				<figure class="figure brick show">
+					<h1 class="title">Canadian Computing Competition</h1>
+					<img src="/static/img/courses/ccc.jpeg" width="400" height="220" class="rounded mx-auto d-block" alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+								<br>
+								<li>Prepare for canadian computing competition</li>
+								<li>Duration: 10 courses.</li>
+								<li>Requirement: Interset in programming.</li>	
+							</ul>
+					</figcaption>
+				</figure>
+			</a>
+			
+			<a href="">
+				<figure class="figure brick show">
+					<h1 class="title">Science Experiments</h1>
+					<img src="/static/img/courses/experiments.png" width="400" height="220" class="rounded mx-auto d-block" alt="">
+					<figcaption class="figure-caption">
+							<ul class="list text-left">
+								<br>
+								<li>Let's do experiments together!</li>
+								<li>Duration: 10 courses.</li>
+								<li>Requirement: Interset in experiments.</li>	
+							</ul>
+					</figcaption>
+				</figure>
+			</a>
+		</div>	
+			
+
 		
-		<hr>
-		<h1 style="text-align: center">{ Presentation }</h1>
-
-		<a href="{{ url_for('presentation') }}">
-			<figure class="figure brick show">
-				<h1 class="title">Programming Education</h1>
-				<img src="https://s5.pipacode.cn/2018/08-13/854babcb5cbfbb619920b91cca9fe009.png" width="400" height="220" class="rounded mx-auto d-block" alt="">
-				<figcaption class="figure-caption">
-						<ul class="list text-left">
-						</ul>
-				</figcaption>
-			</figure>
-		</a>
-
-
     </div>
 
 </div>
