@@ -1,6 +1,6 @@
 body {
   padding: 20px;
-  font-family: "Century", serif;
+  font-family: "Lucida Bright", serif;
 }
 
 
@@ -54,6 +54,14 @@ header h1.logo {
   color:black;
 }
 
+.show_home{
+  margin-top: 0.1%;
+  margin-bottom: 0.1%;
+  margin-left: 0.2%;
+  margin-right: 0.2%;
+  color:black;
+}
+
 .menu{
   display: flex;
   justify-content: center;
@@ -80,7 +88,7 @@ header h1.logo {
 .menu li a {
   text-decoration: none;
   color: black;
-  font-size: 110%;
+  font-size: 120%;
 }
 
 #li_home:hover, #li_about:hover, #li_research:hover, #li_teaching:hover, #li_project:hover{
@@ -98,7 +106,20 @@ header h1.logo {
   border-radius: 5px;
   margin-bottom: 30px;
 
-  animation: zoomIn 0.5s;
+  animation: zoomIn 0.4s;
+}
+
+.brick_home {
+  border: 1.1px solid;
+  padding-left: 2px;
+  padding-right:2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-color:rgba(222, 222, 222, 0.048);
+  box-shadow:5px 5px 13px 5px rgb(177, 177, 177) inset;  
+  border-radius: 5px;
+
+  animation: zoomInDown 1s;
 }
 
 /* animation */
