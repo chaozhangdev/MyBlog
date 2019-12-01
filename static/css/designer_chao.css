@@ -3,12 +3,11 @@ body {
   font-family: "Lucida Bright", serif;
 }
 
-
 .logo {
   text-align: center;
   text-decoration: none;
   color:black;
-  animation: fadeInDown 0.5s;
+  animation: fadeInDown 1s;
 }
 
 h1 {
@@ -62,10 +61,18 @@ header h1.logo {
   color:black;
 }
 
+.show1 { animation: bounceInLeft 1s; }
+.show2 { animation: rollIn 1s; }
+.show3 { animation: zoomInDown 1s; }
+.show4 { animation: zoomInRight 1s; }
+.show5 { animation: zoomInLeft 1s; }
+.show6 { animation: zoomInDown 1s; }
+.show7 { animation: rotateIn 1s; }
+.show8 { animation: bounceInRight 1s; }
+
 .menu{
   display: flex;
   justify-content: center;
-
   border: 1.1px solid;
   padding-left: 20px;
   padding-right:20px;
@@ -105,7 +112,6 @@ header h1.logo {
   box-shadow:5px 5px 13px 5px rgb(177, 177, 177) inset;  
   border-radius: 5px;
   margin-bottom: 30px;
-
   animation: zoomIn 0.4s;
 }
 
@@ -118,8 +124,6 @@ header h1.logo {
   border-color:rgba(222, 222, 222, 0.048);
   box-shadow:5px 5px 13px 5px rgb(177, 177, 177) inset;  
   border-radius: 5px;
-
-  animation: zoomInDown 1s;
 }
 
 /* animation */
