@@ -1,6 +1,8 @@
 body {
   padding: 20px;
   font-family: "Lucida Bright", serif;
+
+  background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg");
 }
 
 .logo {
@@ -9,6 +11,21 @@ body {
   color:black;
   animation: fadeInDown 1s;
 }
+
+.bg {
+  background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg);
+  /* background-image: url(https://media.istockphoto.com/vectors/gray-dots-gradient-on-white-background-vector-id664874844); */
+}
+
+/* .shang {
+
+  background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg);
+
+}
+
+.xia {
+  background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg);
+} */
 
 h1 {
   font-size: 1.6em;
