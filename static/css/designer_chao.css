@@ -17,16 +17,6 @@ body {
   /* background-image: url(https://media.istockphoto.com/vectors/gray-dots-gradient-on-white-background-vector-id664874844); */
 }
 
-/* .shang {
-
-  background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg);
-
-}
-
-.xia {
-  background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg);
-} */
-
 h1 {
   font-size: 1.6em;
 }
@@ -78,14 +68,14 @@ header h1.logo {
   color:black;
 }
 
-.show1 { animation: bounceInLeft 1s; }
-.show2 { animation: rollIn 1s; }
+.show1 { animation: zoomInLeft 1s; }
+.show2 { animation: zoomInDown 1s; }
 .show3 { animation: zoomInDown 1s; }
 .show4 { animation: zoomInRight 1s; }
 .show5 { animation: zoomInLeft 1s; }
-.show6 { animation: zoomInDown 1s; }
-.show7 { animation: rotateIn 1s; }
-.show8 { animation: bounceInRight 1s; }
+.show6 { animation: zoomInUp 1s; }
+.show7 { animation: zoomInUp 1s; }
+.show8 { animation: zoomInRight 1s; }
 
 .menu{
   display: flex;
