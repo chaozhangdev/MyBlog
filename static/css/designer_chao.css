@@ -1,20 +1,25 @@
 body {
-  padding: 20px;
-  font-family: "Lucida Bright", serif;
-
-  background-image: url("https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-045.jpg");
+  /* padding: 20px; */
+  /* font-family: 'Indie Flower', cursive; */
+  /* font-family: 'Poiret One', cursive; */
+  font-family: 'Josefin Slab', serif;
+  /* font-family: 'Solway', serif; */
 }
 
 .logo {
   text-align: center;
   text-decoration: none;
+  padding-top: 40px;
+  font-size: 1.8em;
   color:black;
-  animation: fadeInDown 1s;
+  animation: slideInDown 1s;
 }
 
 .bg {
-  background-image: url("/static/img/bg.jpg");
-  /* background-image: url(https://media.istockphoto.com/vectors/gray-dots-gradient-on-white-background-vector-id664874844); */
+  /* background-image: url("/static/img/bg.jpg"); */
+  background-image: url("https://media.giphy.com/media/XejAq6bBtDDYtOJISc/giphy.gif");
+  /* background-image: url("https://media.giphy.com/media/fxTJiLp29kNJJgrt66/giphy.gif"); */
+
 }
 
 h1 {
@@ -29,10 +34,6 @@ h2 {
 h3 {
   margin-top: 1%;
   font-size: 1.3em;
-}
-
-h1,h2,h3 {
-  font-family: "Lucida Bright", serif;
 }
 
 p {
@@ -165,4 +166,8 @@ hr {
   font-size: 130%;
 }
 
-/* Start http://www.cursors-4u.com */ * {cursor: url(http://cur.cursors-4u.net/others/oth-6/oth638.cur), auto !important;} /* End http://www.cursors-4u.com */
+
+* {cursor: url(http://ani.cursors-4u.net/nature/nat-11/nat1039.cur), auto !important;} /* End http://www.cursors-4u.com */
+
+
+
