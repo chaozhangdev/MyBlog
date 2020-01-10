@@ -4,6 +4,9 @@ body {
   /* font-family: 'Poiret One', cursive; */
   font-family: 'Josefin Slab', serif;
   /* font-family: 'Solway', serif; */
+  /* background-image: url('static/img/cg.gif'); */
+  background-color: rgba(251, 255, 254, 0.866);
+
 }
 
 .logo {
@@ -169,5 +172,6 @@ hr {
 
 * {cursor: url(http://ani.cursors-4u.net/nature/nat-11/nat1039.cur), auto !important;} /* End http://www.cursors-4u.com */
 
-
-
+footer {
+  padding-bottom: 5%;
+}
