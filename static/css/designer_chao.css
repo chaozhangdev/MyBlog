@@ -1,11 +1,6 @@
 body {
-  /* padding: 20px; */
-  /* font-family: 'Indie Flower', cursive; */
-  /* font-family: 'Poiret One', cursive; */
   font-family: 'Josefin Slab', serif;
-  /* font-family: 'Solway', serif; */
-  /* background-image: url('static/img/cg.gif'); */
-  background-color: rgba(251, 255, 254, 0.866);
+  background-image:url('https://media.giphy.com/media/XejAq6bBtDDYtOJISc/giphy.gif')
 
 }
 
@@ -16,13 +11,6 @@ body {
   font-size: 1.8em;
   color:black;
   animation: slideInDown 1s;
-}
-
-.bg {
-  /* background-image: url("/static/img/bg.jpg"); */
-  background-image: url("https://media.giphy.com/media/XejAq6bBtDDYtOJISc/giphy.gif");
-  /* background-image: url("https://media.giphy.com/media/fxTJiLp29kNJJgrt66/giphy.gif"); */
-
 }
 
 h1 {

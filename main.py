@@ -13,6 +13,10 @@ def home():
 def about():
 	return render_template("about.html")
 
+@app.route("/game/")
+def game():
+	return render_template("game.html")
+
 @app.route("/research/")
 def research():
     return render_template("research.html")

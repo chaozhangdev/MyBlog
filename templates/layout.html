@@ -21,20 +21,20 @@
   <link rel="stylesheet" href="{{url_for('static',filename='css/designer_chao.css')}}">
   <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
   <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
-  
-  <div class="bg">
+
   <body>
       <h1 class="logo text-center" >
-        < Developer Chao >
+        < Portfolio - Chao >
       </h1><br> 
       <header> 
       <strong><nav>
         <ul class="list-inline menu text-center">
-          <li id="li_home"><a href="{{ url_for('home') }}">Home</a></li>  
+          <li id="li_home"><a href="{{ url_for('home') }}">About</a></li>  
+          <li id="li_game"><a href="{{ url_for('game') }}">Game</a></li>  
           <!-- <li id="li_about"><a href="{{ url_for('about') }}">About me</a></li> -->
           <li id="li_project"><a href="{{ url_for('project') }}">Project</a></li>
           <li id="li_research"><a href="{{ url_for('research') }}">Research</a></li>
-          <li id="li_teaching"><a href="{{ url_for('teaching') }}">Teaching</a></li>
+          <!-- <li id="li_teaching"><a href="{{ url_for('teaching') }}">Teaching</a></li> -->
         </ul>
       </nav></strong>
       </header>
@@ -47,7 +47,7 @@
 
     <footer>
       <hr class="container">
-      <p style="font-size: 1.0em; text-align:center;">©2019 Chao Zhang</p>
+      <p style="font-size: 1.0em; text-align:center;">© 2019 - 2020 Chao Zhang. All rights reserved.</p> 
       <div style="text-align:center;color: black;" >
         <a href="https://github.com/chaozhanggg"><i class="fa fa-github" style="font-size:26px; color: black;"></i></a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -56,6 +56,5 @@
     </footer>
 
   </body>
-</div>
 
 </html>

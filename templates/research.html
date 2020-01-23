@@ -4,7 +4,7 @@
 
 <script>document.querySelector(".logo").innerHTML="< Research >"</script>
 
-<!-- Steganography -->
+    <!-- Steganography -->
     <div class="brick">
         <h1 class="title">{ Steganography } </h1>
         <h2>[ My New Algorithm ]</h2>
@@ -58,188 +58,223 @@
         </p>
     </div>
 
-<!-- Rough Sets -->
-<div class="brick">
-        <h1 class="title">{ Rough Sets }</h1>
-        <h2>The Concept of Three-way Decision in Rough Set Theory</h2>
-        <P>
-            The concept of three-way decisions was proposed and used to interpret
-            rough set three regions. More specifically, the positive, negative and
-            boundary regions are viewed, respectively, as the regions of acceptance,
-            rejection, and non-commitment in a ternary classification. The positive and
-            negative regions can be used to induce rules of acceptance and rejection;
-            whenever it is impossible to make an acceptance or a rejection decision, the
-            third non-commitment decision is made. It can be shown that, under certain
-            conditions, probabilistic three-way decisions are superior to both Palwak
-            three-way decisions and two-way decisions.
-        </P>
-        <h2>Pawlak Three-step Data Analysis</h2>
+    <!-- Rough Sets -->
+    <div class="brick">
+            <h1 class="title">{ Rough Sets }</h1>
+            <h2>The Concept of Three-way Decision in Rough Set Theory</h2>
+            <P>
+                The concept of three-way decisions was proposed and used to interpret
+                rough set three regions. More specifically, the positive, negative and
+                boundary regions are viewed, respectively, as the regions of acceptance,
+                rejection, and non-commitment in a ternary classification. The positive and
+                negative regions can be used to induce rules of acceptance and rejection;
+                whenever it is impossible to make an acceptance or a rejection decision, the
+                third non-commitment decision is made. It can be shown that, under certain
+                conditions, probabilistic three-way decisions are superior to both Palwak
+                three-way decisions and two-way decisions.
+            </P>
+            <h2>Pawlak Three-step Data Analysis</h2>
+            <p>
+                An information table provides all available information about a set of
+                objects. We analyze attributes and objects based on the information functions
+                in the table. Pawlak investigated three main tasks of rough set analysis and
+                presented them in a sequential three steps. The first step analyzes attribute
+                dependencies with an objective to simplify a table. The main tasks involving
+                identifying superfluous attributes and finding a minimal subset of attributes
+                that preserves the same information as the entire set of attributes for the
+                purpose of classification. Such a minimal set of attributes is called an
+                attribute reduct of the table or a relative attribute reduct of a classification
+                table. There may exist more than one reduct for each table. With respect to a
+                reduced table with a minimal set of attributes in a decision table, we can
+                construct a set of decision rules. The left-hand-side of each decision rule is a
+                conjunction of a set of attribute-value pairs. The second step analyzes
+                dependencies of attribute values with an objective to simplify a decision rule.
+                Similar to the notion of superfluous attribute in a table, there may exist
+                superfluous attribute-value pairs in the left-hand-side of a decision rule. The
+                main tasks of the second step are to identify superfluous attribute-value pairs
+                and to derive a minimal set of attribute-value pairs for each decision rule. A
+                minimal set of attribute-value pairs is called a relative attribute value-pair
+                reduct. Again, there may exist more than one reduct. The result of the second
+                step is a set of minimal decision rules. The third step analyzes dependencies
+                of decision rules with an objective to simplifying a set of decision rules.
+                There may exist superfluous rules in the set of decision rules obtained in the
+                second step. By removing superfluous rules, one can obtain a minimal set of
+                rules called a rule reduct.
+            </p>
+            <h2>Three-Way Decisions</h2>
+            <p>
+                The main ideas of three-way decisions are described in terms of a ternary
+                classification according to evaluations of a set of criteria. Suppose U is a
+                finite nonempty set of objects or decision alternatives and C is a finite set of
+                conditions. Each condition in C may be a criterion, an objective, or a
+                constraint. For simplicity, we refer to conditions in C as criteria. Our
+                decision task is to classify objects of U according to whether they satisfy the
+                set of criteria. In widely used two-way decision models, it is assumed that an
+                object either satisfies the criteria or does not satisfy the criteria. The set U is
+                divided into two disjoint regions, namely, the positive region POS for
+                objects satisfying the criteria and the negative region NEG for objects not
+                satisfying the criteria. There are usually some classification errors associated
+                with such a binary classification. Two main difficulties with two-way
+                approaches are their stringent binary assumption of the satisfiability of
+                objects and the requirement of a dichotomous classification. In many
+                situations, it may happen that an object only satisfies the set of criteria to
+                some degree. Even if an object may actually either satisfy or not satisfy the
+                criteria, we may not be able to identify without uncertainty the subset of
+                objects that satisfy the criteria due to uncertain or incomplete information.
+                Consequently, we are only able to search for an approximate solution.
+                Instead of making a binary decision, we use thresholds on the degrees of
+                satisfiability to make one of three decisions: (a) accept an object as
+                satisfying the set of criteria if its degree of satisfiability is at or above a
+                certain level; (b) reject the object by treating it as not satisfying the criteria if
+                its degree of satisfiability is at or below another level; and (c) neither accept
+                nor reject the object but opt for a non-commitment. The third option may
+                also be referred to as a deferment decision that requires further information
+                or investigation.
+            </p>
+            <h2>Examples of Three-Way Decisions</h2>
+            <p>
+                [Triage] This is a classical example of three-way decisions that was
+                used to prioritize treatment of the wounded during war. The basic version of
+                triage divides a set of the wounded into three categories:
+                1. Those who are likely to live, regardless of what care they receive;
+                2. Those who are likely to die no matter what is done for them;
+                3. Those for whom immediate care will make a difference.
+            </p>
+            <p>
+                [Text Analysis] Some of the tasks of text analysis are to identify a set of
+                significant words and to determine their significance values. Following the
+                pioneer work of Luhn, one can divide a set of words into three regions based
+                on their frequencies. Given a pair of a high threshold u and a low threshold l,
+                we can divide words into three regions. High-frequency words ranked before
+                u and low-frequency words ranked after l are non-significant words, and
+                medium-frequency words ranked between u and l are significant words.
+                Once the three regions are constructed, one can design strategies to further
+                process words in each region.
+            </p>
+            <p>
+                [Management of Students] Many schools, colleges, and universities
+                typically monitor student progress based on a three-way classification of
+                students. For example, according to GPA (Grade Point Average), one can
+                divide students into the groups of high-, medium-, and low- GPA students,
+                respectively. A different action is taken for each group of students. A
+                high-GPA student may be awarded a scholarship and a low-GPA student may
+                receive a warning letter. It is surprising that we seldom question the
+                rationales and impacts of these strategies, particularly, the strategy of doing
+                nothing for medium-GPA students.
+            </p>
+            <p>
+                [Traffic Lights] In our daily life, we use traffic lights based on a
+                three-way classification of conditions. As we know, it has red light, green
+                light and yellow light which are three conditions that satisfying the go, stop
+                and the medium between go and stop which alerts drivers to make a
+                decision.
+            </p>
+            <p>
+                [Marking System] In many universities, professors or TA doing marking
+                also uses a three-way decision. For the all correct part, it is in positive region,
+                for the all wrong part, it is in negative region, and the medium which has
+                correct part but not all correct is in boundary region.
+            </p>
+    </div>
+            
+    <!-- Information Retrieval -->
+    <div class="brick">
+        <h1 class="title">{ Information Retrieval }</h1>
+        <br>
         <p>
-            An information table provides all available information about a set of
-            objects. We analyze attributes and objects based on the information functions
-            in the table. Pawlak investigated three main tasks of rough set analysis and
-            presented them in a sequential three steps. The first step analyzes attribute
-            dependencies with an objective to simplify a table. The main tasks involving
-            identifying superfluous attributes and finding a minimal subset of attributes
-            that preserves the same information as the entire set of attributes for the
-            purpose of classification. Such a minimal set of attributes is called an
-            attribute reduct of the table or a relative attribute reduct of a classification
-            table. There may exist more than one reduct for each table. With respect to a
-            reduced table with a minimal set of attributes in a decision table, we can
-            construct a set of decision rules. The left-hand-side of each decision rule is a
-            conjunction of a set of attribute-value pairs. The second step analyzes
-            dependencies of attribute values with an objective to simplify a decision rule.
-            Similar to the notion of superfluous attribute in a table, there may exist
-            superfluous attribute-value pairs in the left-hand-side of a decision rule. The
-            main tasks of the second step are to identify superfluous attribute-value pairs
-            and to derive a minimal set of attribute-value pairs for each decision rule. A
-            minimal set of attribute-value pairs is called a relative attribute value-pair
-            reduct. Again, there may exist more than one reduct. The result of the second
-            step is a set of minimal decision rules. The third step analyzes dependencies
-            of decision rules with an objective to simplifying a set of decision rules.
-            There may exist superfluous rules in the set of decision rules obtained in the
-            second step. By removing superfluous rules, one can obtain a minimal set of
-            rules called a rule reduct.
-        </p>
-        <h2>Three-Way Decisions</h2>
-        <p>
-            The main ideas of three-way decisions are described in terms of a ternary
-            classification according to evaluations of a set of criteria. Suppose U is a
-            finite nonempty set of objects or decision alternatives and C is a finite set of
-            conditions. Each condition in C may be a criterion, an objective, or a
-            constraint. For simplicity, we refer to conditions in C as criteria. Our
-            decision task is to classify objects of U according to whether they satisfy the
-            set of criteria. In widely used two-way decision models, it is assumed that an
-            object either satisfies the criteria or does not satisfy the criteria. The set U is
-            divided into two disjoint regions, namely, the positive region POS for
-            objects satisfying the criteria and the negative region NEG for objects not
-            satisfying the criteria. There are usually some classification errors associated
-            with such a binary classification. Two main difficulties with two-way
-            approaches are their stringent binary assumption of the satisfiability of
-            objects and the requirement of a dichotomous classification. In many
-            situations, it may happen that an object only satisfies the set of criteria to
-            some degree. Even if an object may actually either satisfy or not satisfy the
-            criteria, we may not be able to identify without uncertainty the subset of
-            objects that satisfy the criteria due to uncertain or incomplete information.
-            Consequently, we are only able to search for an approximate solution.
-            Instead of making a binary decision, we use thresholds on the degrees of
-            satisfiability to make one of three decisions: (a) accept an object as
-            satisfying the set of criteria if its degree of satisfiability is at or above a
-            certain level; (b) reject the object by treating it as not satisfying the criteria if
-            its degree of satisfiability is at or below another level; and (c) neither accept
-            nor reject the object but opt for a non-commitment. The third option may
-            also be referred to as a deferment decision that requires further information
-            or investigation.
-        </p>
-        <h2>Examples of Three-Way Decisions</h2>
-        <p>
-            [Triage] This is a classical example of three-way decisions that was
-            used to prioritize treatment of the wounded during war. The basic version of
-            triage divides a set of the wounded into three categories:
-            1. Those who are likely to live, regardless of what care they receive;
-            2. Those who are likely to die no matter what is done for them;
-            3. Those for whom immediate care will make a difference.
+            Information retrieval is obtaining information from resources according to need.
+            The basic structure of information retrieval can be three main parts: documents,
+            users and matching. Documents need representations. Users provide queries.
+            Matching combines documents and users’ queries to provide retrieved
+            information. Matching can be classified into two parts: exact matching and
+            inexact matching. In exact matching, we have Boolean model. In inexact
+            matching, we have vector space model and probabilistic models. Vector spacer
+            model includes binary vector space models and weighted vector space models.
+            For the results which are retrieved information, we have relevance feedback. It
+            contains binary relevance feedback viewing documents as relevant or nonrelevant
+            and user preference feedback including perfect ranking and acceptable
+            ranking. Relevance feedback as well as system evaluation, they both improve the
+            effectiveness and efficiency of the whole information retrieval system.
         </p>
         <p>
-            [Text Analysis] Some of the tasks of text analysis are to identify a set of
-            significant words and to determine their significance values. Following the
-            pioneer work of Luhn, one can divide a set of words into three regions based
-            on their frequencies. Given a pair of a high threshold u and a low threshold l,
-            we can divide words into three regions. High-frequency words ranked before
-            u and low-frequency words ranked after l are non-significant words, and
-            medium-frequency words ranked between u and l are significant words.
-            Once the three regions are constructed, one can design strategies to further
-            process words in each region.
+            The history of information retrieval originates from file system, then to databases
+            and finally to IR system. Further more, information retrieval can reach
+            knowledge retrieval. For each of part in the whole structure discussed above, it
+            has many models and concepts. In the beginning, we have documents. From
+            documents to results, we need indexing.
         </p>
         <p>
-            [Management of Students] Many schools, colleges, and universities
-            typically monitor student progress based on a three-way classification of
-            students. For example, according to GPA (Grade Point Average), one can
-            divide students into the groups of high-, medium-, and low- GPA students,
-            respectively. A different action is taken for each group of students. A
-            high-GPA student may be awarded a scholarship and a low-GPA student may
-            receive a warning letter. It is surprising that we seldom question the
-            rationales and impacts of these strategies, particularly, the strategy of doing
-            nothing for medium-GPA students.
+            Indexing is a transition from external representation like web pages to internal
+            representation such as terms. We determine the set of terms by controlled
+            vocabulary and uncontrolled vocabulary. Then we have a basic assumption of
+            relevant and non-relevant according to if there is a word appears in documents
+            with its frequency determining the importance.
+        <p>
+        <p>
+            From indexing, we know terms and frequencies. So, a term to frequency matrix
+            can be built which is TM matrix in short. Then we introduce Boolean model with
+            binary document representation and Boolean query expression. In order to avoid
+            all terms are equally weighted, we need to change TF matrix into a weighted
+            matrix. There are many weighted methods: row-wise normalization, columnwise
+            normalization, R*C, TF*IDF and so on.
+        </p>	
+        <p>
+            To improve the system, we then have system evaluation. Evaluation is to find
+            measures which tell 1. whether a system is good; 2. if one system is better than
+            another system. There are three classical measures in binary evaluation:
+            precision-based, recall-based and balanced. In user preference system evaluation,
+            we then discuss user preference relation, indifference relation, perfect ranking
+            and acceptable ranking. The measurement for user preference evaluation can be
+            calculated by ndpm. Ndpm classifies the relationship between system and user
+            into 3 cases: agree, contradict, compatible which has 0, 2 and 1 credits
+            respectively. By calculating the whole sum, we can know the exact matching
+            degree.
         </p>
         <p>
-            [Traffic Lights] In our daily life, we use traffic lights based on a
-            three-way classification of conditions. As we know, it has red light, green
-            light and yellow light which are three conditions that satisfying the go, stop
-            and the medium between go and stop which alerts drivers to make a
-            decision.
+            For inexact matching, there is vector space model of information system. In
+            vector space model, we have different weighted formula to represent a document,
+            cosine similarity and linear retrieval function as well as probability
+            interpretations. At last, we introduce relevance feedback. It asks the system learn
+            from examples and correct errors by itself to construct a bridge between results
+            and documents.
         </p>
-        <p>
-            [Marking System] In many universities, professors or TA doing marking
-            also uses a three-way decision. For the all correct part, it is in positive region,
-            for the all wrong part, it is in negative region, and the medium which has
-            correct part but not all correct is in boundary region.
-        </p>
-</div>
-        
-<!-- Information Retrieval -->
-<div class="brick">
-    <h1 class="title">{ Information Retrieval }</h1>
-    <br>
-    <p>
-        Information retrieval is obtaining information from resources according to need.
-        The basic structure of information retrieval can be three main parts: documents,
-        users and matching. Documents need representations. Users provide queries.
-        Matching combines documents and users’ queries to provide retrieved
-        information. Matching can be classified into two parts: exact matching and
-        inexact matching. In exact matching, we have Boolean model. In inexact
-        matching, we have vector space model and probabilistic models. Vector spacer
-        model includes binary vector space models and weighted vector space models.
-        For the results which are retrieved information, we have relevance feedback. It
-        contains binary relevance feedback viewing documents as relevant or nonrelevant
-        and user preference feedback including perfect ranking and acceptable
-        ranking. Relevance feedback as well as system evaluation, they both improve the
-        effectiveness and efficiency of the whole information retrieval system.
-    </p>
-    <p>
-        The history of information retrieval originates from file system, then to databases
-        and finally to IR system. Further more, information retrieval can reach
-        knowledge retrieval. For each of part in the whole structure discussed above, it
-        has many models and concepts. In the beginning, we have documents. From
-        documents to results, we need indexing.
-    </p>
-    <p>
-        Indexing is a transition from external representation like web pages to internal
-        representation such as terms. We determine the set of terms by controlled
-        vocabulary and uncontrolled vocabulary. Then we have a basic assumption of
-        relevant and non-relevant according to if there is a word appears in documents
-        with its frequency determining the importance.
-    <p>
-    <p>
-        From indexing, we know terms and frequencies. So, a term to frequency matrix
-        can be built which is TM matrix in short. Then we introduce Boolean model with
-        binary document representation and Boolean query expression. In order to avoid
-        all terms are equally weighted, we need to change TF matrix into a weighted
-        matrix. There are many weighted methods: row-wise normalization, columnwise
-        normalization, R*C, TF*IDF and so on.
-    </p>	
-    <p>
-        To improve the system, we then have system evaluation. Evaluation is to find
-        measures which tell 1. whether a system is good; 2. if one system is better than
-        another system. There are three classical measures in binary evaluation:
-        precision-based, recall-based and balanced. In user preference system evaluation,
-        we then discuss user preference relation, indifference relation, perfect ranking
-        and acceptable ranking. The measurement for user preference evaluation can be
-        calculated by ndpm. Ndpm classifies the relationship between system and user
-        into 3 cases: agree, contradict, compatible which has 0, 2 and 1 credits
-        respectively. By calculating the whole sum, we can know the exact matching
-        degree.
-    </p>
-    <p>
-        For inexact matching, there is vector space model of information system. In
-        vector space model, we have different weighted formula to represent a document,
-        cosine similarity and linear retrieval function as well as probability
-        interpretations. At last, we introduce relevance feedback. It asks the system learn
-        from examples and correct errors by itself to construct a bridge between results
-        and documents.
-    </p>
-</div>
+    </div>
 
+<!-- 
+    <hr>
+    <h1 class="text-center">{ Research Paper }</h1>
+
+    <div class="text-center">
+
+        <a href="https://github.com/zzzchaozzz/ComputerAudio/blob/master/VoiceDisguiseResearchPaper_chaoZhang.pdf">
+            <figure class="figure brick show">
+                <h1 class="title">Computer Audio</h1>
+                <img src="/static/img/ca.png" width="400" height="220" class="rounded mx-auto d-block" alt="">
+                <figcaption class="figure-caption">
+                        <ul class="list text-left">
+                            <br>
+                            <li>Research in distortion effect implementation by digital filters.</li>
+                            <li >Research in identification of voice disguise.</li>
+                        </ul>
+                </figcaption>
+            </figure>
+        </a>
+
+        <a href="https://github.com/zzzchaozzz/NetworkCommunication">
+            <figure class="figure brick show">
+                <h1 class="title">Network Communication</h1>
+                <img src="/static/img/nnn.png" width="400" height="220" class="rounded mx-auto d-block " alt="">
+                <figcaption class="figure-caption">
+                    <ul class="list text-left">
+                        <br>
+                        <li>Research in collision avoidance with chip-less RFID tags.</li>
+                        <li>Research in RFID and drone assisted vehicular networks.</li>
+                    </ul>
+                </figcaption>
+            </figure>
+        </a>
+
+    </div> -->
 
 </div>
 {% endblock %}
