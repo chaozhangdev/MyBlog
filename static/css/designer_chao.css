@@ -10,7 +10,7 @@ body {
   padding-top: 40px;
   font-size: 1.8em;
   color:black;
-  animation: slideInDown 1s;
+  /* animation: slideInDown 1s; */
 }
 
 h1 {
@@ -97,7 +97,7 @@ header h1.logo {
   font-size: 120%;
 }
 
-#li_home:hover, #li_about:hover, #li_research:hover, #li_teaching:hover, #li_project:hover{
+#li_home:hover, #li_research:hover, #li_game:hover, #li_project:hover{
   animation: heartBeat 5s; 
 }
 
